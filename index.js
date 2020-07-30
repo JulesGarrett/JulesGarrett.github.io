@@ -32,6 +32,7 @@ async function graph1(){
 
     // format the data
     data.forEach(function(d) {
+      console.log(d)
         d.date = parseTime(d.date);
         d.positive = +d.positive;
     });
