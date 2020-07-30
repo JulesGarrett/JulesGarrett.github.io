@@ -32,7 +32,9 @@ async function graph1(){
 
     // format the data
     data.forEach(function(d) {
-      console.log(d)
+      console.log(d.positive)
+      console.log(d.date)
+      console.log(parseTime(d.date))
         d.date = parseTime(d.date);
         d.positive = +d.positive;
     });
