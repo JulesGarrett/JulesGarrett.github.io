@@ -33,10 +33,9 @@ async function graph1(){
     // format the data
     data.forEach(function(d) {
         d.date = parseTime(d.date);
-        d.positive = d.positive;
+        d.positive = +d.positive;
     });
-    console.log(data)
-    console.log([data])
+
 
     // Scale the range of the data
     x.domain(d3.extent(data, function(d) { return d.date; }));
@@ -45,7 +44,7 @@ async function graph1(){
 
     // Add the valueline path.
     svg.append("path")
-        .data([data])
+        .data(data)
         .attr("class", "line")
         .attr("d", valueline);
 
