@@ -15,6 +15,10 @@ async function graph1(){
       .x(function(d) { return x(d.date); })
       .y(function(d) { return y(d.positive); });
 
+  var valueline2 = d3.line()
+      .x(function(d) { return x(d.date); })
+      .y(function(d) { return y(d.death); });
+
 
   // append the svg obgect to the body of the page
   // appends a 'group' element to 'svg'
@@ -34,6 +38,7 @@ async function graph1(){
     data.forEach(function(d) {
         d.date = parseTime(d.date);
         d.positive = +d.positive;
+        d.death = +d.death;
     });
 
 
@@ -47,6 +52,12 @@ async function graph1(){
         .data([data])
         .attr("class", "line")
         .attr("d", valueline);
+
+    svg.append("path")
+        .data([data])
+        .attr("class", "line")
+        .style("stroke", "red")
+        .attr("d", valueline2);
 
     // Add the X Axis
     svg.append("g")
