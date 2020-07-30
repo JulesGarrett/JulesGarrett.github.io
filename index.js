@@ -36,7 +36,7 @@ async function graph1(){
       console.log(d.date)
       console.log(parseTime(d.date))
         d.date = parseTime(d.date);
-        d.positive = +d.positive;
+        d.positive = d.positive;
     });
 
     // Scale the range of the data
