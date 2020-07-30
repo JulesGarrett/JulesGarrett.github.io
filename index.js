@@ -45,6 +45,7 @@ async function graph1(){
     // Add the valueline path.
     svg.append("path")
         .data([data])
+        .attr("class", "line")
         .attr("d", valueline);
 
     // Add the X Axis
