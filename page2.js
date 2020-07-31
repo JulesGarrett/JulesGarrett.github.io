@@ -33,6 +33,11 @@ function update(selectedVar){
   d3.csv("state_data_20200726.csv", function(error, data) {
     if (error) throw error;
 
+        // sort data
+    data.sort(function(b, a) {
+      return a[selectedVar] - b[selectedVar];
+    });
+
     // X axis
     x.domain(data.map(function(d) { return d.State; }))
     xAxis.transition().duration(1000).call(d3.axisBottom(x))
