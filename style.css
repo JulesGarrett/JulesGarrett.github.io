@@ -21,7 +21,6 @@ p{
   color:grey;
   margin-left:50px;
   margin-top:50px;
-  align: "center";
   }
 a {
   text-decoration: none;
@@ -45,7 +44,7 @@ a {
   stroke-width: 2px;
 }
 .filters{
-  float: right; 
+  float: right;
   padding: 14px 25px;
   text-align: center;
   text-decoration: none;
