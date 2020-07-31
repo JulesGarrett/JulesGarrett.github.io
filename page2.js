@@ -23,21 +23,15 @@ async function graph2(){
   d3.csv("state_data_20200726.csv", function(error, data) {
     if (error) throw error;
 
-    // format the data
-    data.forEach(function(d) {
-        d.state = d.State;
-        d.death = +d.Deaths_Total;
-    });
-
     // sort data
     data.sort(function(b, a) {
-      return a.Value - b.Value;
+      return a.Deaths_Total - b.Deaths_Total;
     });
 
     // Scale the range of the data
-    x.domain(data.map(function(d) { return d.state; }));
+    x.domain(data.map(function(d) { return d.State; }));
     y.domain([0, d3.max(data, function(d) {
-      return Math.max(d.death); })]);
+      return Math.max(d.Deaths_Total); })]);
 
 
     // Add the X Axis
@@ -54,10 +48,10 @@ async function graph2(){
         .enter()
         .append("rect")
         .attr("class", "bar")
-        .attr("x", function(d) { return x(d.state); })
-        .attr("y", function(d) { return y(d.death); })
+        .attr("x", function(d) { return x(d.State); })
+        .attr("y", function(d) { return y(d.Deaths_Total); })
         .attr("width", x.bandwidth())
-        .attr("height", function(d) { return height - y(d.death); });
+        .attr("height", function(d) { return height - y(d.Deaths_Total); });
 
   });
 }
