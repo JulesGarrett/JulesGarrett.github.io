@@ -13,7 +13,6 @@ h1{
   margin-top:20px;
   }
 p{
-  height: 80%;
   width: 80%;
   padding-left: 60px;
   padding-top: 0px;
@@ -45,3 +44,11 @@ a {
   stroke: steelblue;
   stroke-width: 2px;
 }
+.filters{
+  float: right; 
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-left:60px;
+  }
