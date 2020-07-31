@@ -29,6 +29,11 @@ async function graph2(){
         d.death = +d.Deaths_Total;
     });
 
+    // sort data
+    data.sort(function(b, a) {
+      return a.Value - b.Value;
+    });
+
     // Scale the range of the data
     x.domain(data.map(function(d) { return d.state; }));
     y.domain([0, d3.max(data, function(d) {
