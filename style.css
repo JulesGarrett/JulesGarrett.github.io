@@ -45,7 +45,7 @@ a {
   stroke-width: 2px;
 }
 .filters{
-  float: right;
+  float: center;
   padding: 14px 25px;
   text-align: center;
   text-decoration: none;
