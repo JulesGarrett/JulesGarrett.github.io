@@ -39,7 +39,7 @@ function update(selectedVar){
     });
 
     // X axis
-    x.domain(data.map(function(d) { return d.State; }))
+    x.domain(data.map(function(d) { return d.state; }))
     xAxis.transition().duration(1000).call(d3.axisBottom(x))
 
     // Add Y axis
@@ -57,7 +57,7 @@ function update(selectedVar){
       .merge(u)
       .transition()
       .duration(1000)
-        .attr("x", function(d) { return x(d.State); })
+        .attr("x", function(d) { return x(d.state); })
         .attr("y", function(d) { return y(d[selectedVar]); })
         .attr("width", x.bandwidth())
         .attr("height", function(d) { return height - y(d[selectedVar]); })
