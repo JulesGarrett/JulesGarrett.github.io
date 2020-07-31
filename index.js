@@ -106,7 +106,7 @@ async function graph2(){
             "translate(" + margin.left + "," + margin.top + ")");
 
   // Get the data
-  d3.csv("RaceDataEntry-CRDT.csv", function(error, data) {
+  d3.csv("daily.csv", function(error, data) {
     if (error) throw error;
 
     // format the data
