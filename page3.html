@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>COVID-19 Impact in US - Demographics</title>
   </head>
@@ -15,8 +15,14 @@
         lksdfj;kladjfl;ksajdf;klasjfdl;kasjfkls;dajfls;afjsdakllk;djflsakdjfa;dkslfj
         dlkjf;alskdfjk;lasdfjkl;adsjfkl;adsfjkls;djfa;lkdfjal;kjfkl;ajfkl;aj
         dslkfjsa;dlfjals;kdfjas;lkfjals;kdjfakl;jfs</p>
-    <script type="text/javascript">
-
-    </script>
+    <div class="filters">
+      <button onclick="update('positive')">Cases</button>
+      <button onclick="update('death')">Deaths</button>
+      <button onclick="update('hospitalizedCurrently')">Currently Hospitalized</button>
+      <button onclick="update('recovered')">Recovered</button>
+    </div>
+    <p id="dataviz_area">
+    </p>
+    <script src="page3.js"></script>
   </body>
 </html>
