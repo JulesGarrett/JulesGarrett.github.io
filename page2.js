@@ -67,4 +67,4 @@ function update(selectedVar){
 }
 
 // Initialize plot
-update('Cases_Total')
+update('positive')
