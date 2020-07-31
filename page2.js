@@ -32,14 +32,14 @@ async function graph2(){
             "translate(" + margin.left + "," + margin.top + ")");
 
   // Get the data
-  d3.csv("daily.csv", function(error, data) {
+  d3.csv("RaceDataEntry-CRDT.csv", function(error, data) {
     if (error) throw error;
 
     // format the data
     data.forEach(function(d) {
-        d.date = parseTime(d.date);
-        d.positive = +d.positive;
-        d.death = +d.death;
+        d.date = parseTime(d.Date);
+        d.positive = +d.Cases_Total;
+        d.death = +d.Cases_White;
     });
 
 
