@@ -38,8 +38,8 @@ async function graph2(){
     // format the data
     data.forEach(function(d) {
         d.date = parseTime(d.date);
-        d.positive = +d.Cases_Total;
-        d.death = +d.Cases_White;
+        d.positive = +d.positive;
+        d.death = +d.death;
     });
 
 
