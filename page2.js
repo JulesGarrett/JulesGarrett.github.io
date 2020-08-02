@@ -38,7 +38,7 @@ var tooltip = d3.select("#dataviz_area")
   .append("div")
   .style("opacity", 0)
   .attr("class", "tooltip")
-  .style("background-color", "white")
+  .style("background-color", "green")
   .style("border", "solid")
   .style("border-width", "1px")
   .style("border-radius", "5px")
@@ -47,8 +47,9 @@ var tooltip = d3.select("#dataviz_area")
 // Three function that change the tooltip when user hover / move / leave a cell
 var mouseover = function(d) {
   tooltip
-      .html("subgroup: ")
+      .html("TESTING")
       .style("opacity", 1)
+      .style("color", "red")
 }
 var mousemove = function(d) {
   tooltip
