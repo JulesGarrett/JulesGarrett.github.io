@@ -74,7 +74,7 @@ var svg = d3.select("#dataviz_area").append("svg")
     var color = d3.scaleOrdinal()
         .domain(subgroups)
         .range(['#e41a1c','#377eb8','#4daf4a'])
-        
+
 function update(selectedVar, data){
     data = data.filter(function(d){return d.state==selectedVar})
 
@@ -103,7 +103,7 @@ function update(selectedVar, data){
     })
 
 }
-)}
+})
 
 // Initialize plot
 update('United States')
