@@ -105,6 +105,7 @@ a {
   background-color: #d3d3d3;
   width: 60%;
   float: center;
+  align-items: center;
 }
 .tooltip{
     position      : absolute;
