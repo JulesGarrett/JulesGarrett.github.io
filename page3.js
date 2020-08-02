@@ -86,6 +86,7 @@ function update(selectedVar){
         .attr("fill", function(d) { return color(d.key); });
 
 }
+)}
 
 // Initialize plot
 update('positive')
