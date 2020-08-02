@@ -84,10 +84,16 @@ async function graph1(){
     svg.append("text").attr("x", width/2-120).attr("y", 10).text("Deaths").style("font-size", "15px").attr("alignment-baseline","middle")
 
     svg.append("line")
-      .attr("x1", width/2)
-      .attr("x2", width)
-      .attr("y1", height/2)
-      .attr("y2", height)
+      .attr("x1", width/5)
+      .attr("x2", 0)
+      .attr("y1", height/3)
+      .attr("y2", 5)
       .style("stroke", "green")
+    svg.append("text")
+      .attr("x", width/5)
+      .attr("y", height/3)
+      .text("Cases")
+      .style("font-size", "15px")
+      .attr("alignment-baseline","middle")
   });
 }
