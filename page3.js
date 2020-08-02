@@ -59,7 +59,7 @@ d3.csv("perc_demog_20200726_clean.csv").get(function(data) {
 
   // Add Y axis
   y.domain([0, 1]);
-  yAxis.transition().duration(1000).call(d3.axisLeft(y));
+  yAxis.transition().duration(1000).call(d3.axisLeft(y).tickFormat(d3.format(".2%")));
 
   var xSubgroup = d3.scaleBand()
       .domain(subgroups)
