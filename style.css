@@ -25,6 +25,8 @@ h5{
 .description p{
   width: 60%;
   font-size:16px;
+  padding-left: 50px;
+  padding-right: 50px;
   margin-left:50px;
   margin-right:50px;
   margin-top:50px;
@@ -100,11 +102,6 @@ a {
   }
 .description{
   background-color: #d3d3d3;
-  float: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left:60px;
   width: 100%;
   margin-left:50px;
   margin-right:50px;
