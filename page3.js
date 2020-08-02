@@ -29,6 +29,7 @@ d3.csv("perc_demog_20200726_clean.csv").get(function(data) {
     .append('option')
     .text(function (d) { return d; })
     .attr("value", function (d) { return d; })
+    .property("selected", function(d){ return d === 'United States'; })
 
 
   var x = d3.scaleBand()
