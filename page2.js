@@ -47,25 +47,24 @@ var tooltip = d3.select("#dataviz_area")
   .style("display", "block")
 
 
-// Three function that change the tooltip when user hover / move / leave a cell
-var mouseover = function(d) {
-  tooltip
-      .html("State: "+d.full_name+"<br>"+selectedVar+": "+d[selectedVar])
-      .style("opacity", 1)
-      .style("color", "red")
-}
-var mousemove = function(d) {
-  tooltip
-    .style("left", (d3.mouse(this)[0]+90) + "px")
-    .style("top", (d3.mouse(this)[1]+90) + "px")
-}
-var mouseleave = function(d) {
-  tooltip
-    .style("opacity", 0)
-}
-
 
 function update(selectedVar){
+  // Three function that change the tooltip when user hover / move / leave a cell
+  var mouseover = function(d) {
+    tooltip
+        .html("State: "+d.full_name+"<br>"+selectedVar+": "+d[selectedVar])
+        .style("opacity", 1)
+        .style("color", "red")
+  }
+  var mousemove = function(d) {
+    tooltip
+      .style("left", (d3.mouse(this)[0]+90) + "px")
+      .style("top", (d3.mouse(this)[1]+90) + "px")
+  }
+  var mouseleave = function(d) {
+    tooltip
+      .style("opacity", 0)
+  }
   // Get the data
   d3.csv("state_data_20200726.csv", function(error, data) {
     if (error) throw error;
