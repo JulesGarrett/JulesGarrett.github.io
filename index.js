@@ -94,13 +94,13 @@ async function graph1(){
       .attr("x", width/10)
       .attr("y", height/3)
       .text("Jan. 21: The first reported Covid Case in the US")
-      .style("font-size", "10px")
+      .style("font-size", "12px")
       .attr("alignment-baseline","middle")
 
     // Annotation: LockDown
     svg.append("line")
       .attr("x1", width/5)
-      .attr("x2", width/4)
+      .attr("x2", width/3.5)
       .attr("y1", height/2)
       .attr("y2", height-10)
       .style("stroke", "gray")
@@ -108,7 +108,7 @@ async function graph1(){
       .attr("x", width/5)
       .attr("y", height/2)
       .text("Mar. 13: Trump declares national emergency")
-      .style("font-size", "10px")
+      .style("font-size", "12px")
       .attr("alignment-baseline","middle")
 
   // Annotation: ReOpen
@@ -122,7 +122,7 @@ async function graph1(){
     .attr("x", width/2)
     .attr("y", height/2)
     .text("Early-Mid May: States start to reopen")
-    .style("font-size", "10px")
+    .style("font-size", "12px")
     .attr("alignment-baseline","middle")
 
 // Annotation: First Day of Summer
@@ -136,7 +136,7 @@ svg.append("text")
   .attr("x", width-(width/8))
   .attr("y", height/1.5)
   .text("Jun. 20: First Offical Day of Summer")
-  .style("font-size", "10px")
+  .style("font-size", "12px")
   .attr("alignment-baseline","middle")
 });
 }
