@@ -20,15 +20,10 @@ function update(selectedVar){
   // Get the data
   d3.csv("perc_demog_20200726_clean.csv", function(error, data) {
     if (error) throw error;
-    console.log(data)
-    data = data.filter(function(d){return d.state==selectedVar})
-    console.log(data)
 
     var all_states = d3.map(data, function(d){return(d.state)}).keys()
     var subgroups = data.columns.slice(1)
     var groups = d3.map(data, function(d){return(d.group)}).keys()
-    console.log(subgroups)
-    console.log(groups)
 
     var dropdownButton = d3.select("#selectButton")
     dropdownButton
@@ -80,6 +75,8 @@ function update(selectedVar){
         .domain(subgroups)
         .range(['#e41a1c','#377eb8','#4daf4a'])
 
+    data = data.filter(function(d){return d.state==selectedVar})
+    
     svg.append("g")
       .selectAll("g")
       // Enter in data = loop group per group
