@@ -1,5 +1,5 @@
 async function graph1(){
-  var margin = {top: 20, right: 20, bottom: 30, left: 70},
+  var margin = {top: 50, right: 70, bottom: 30, left: 70},
       width = 960 - margin.left - margin.right,
       height = 500 - margin.top - margin.bottom;
 
@@ -70,16 +70,16 @@ async function graph1(){
         .call(d3.axisLeft(y));
 
     svg.append("text")
-    .attr("x", (width / 2))
-    .attr("y", 0 - (margin.top / 2))
-    .attr("text-anchor", "middle")
-    .style("font-size", "16px")
-    .text("Total Number of Covid Cases and Deaths in United States");
+      .attr("x", (width / 2))
+      .attr("y", 0 - (margin.top / 2))
+      .attr("text-anchor", "middle")
+      .style("font-size", "16px")
+      .text("Total Number of Covid Cases and Deaths in United States");
 
-    svg.append("circle").attr("cx",200).attr("cy",130).attr("r", 6).style("fill", "Navy Blue")
-    svg.append("circle").attr("cx",200).attr("cy",160).attr("r", 6).style("fill", "red")
-    svg.append("text").attr("x", 220).attr("y", 130).text("Cases").style("font-size", "15px").attr("alignment-baseline","middle")
-    svg.append("text").attr("x", 220).attr("y", 160).text("Deaths").style("font-size", "15px").attr("alignment-baseline","middle")
+    svg.append("circle").attr("cx",width-30).attr("cy",height-30).attr("r", 6).style("fill", "blue")
+    svg.append("circle").attr("cx",width-30).attr("cy",height-60).attr("r", 6).style("fill", "red")
+    svg.append("text").attr("x", width-50).attr("y", height-30).text("Cases").style("font-size", "15px").attr("alignment-baseline","middle")
+    svg.append("text").attr("x", width-50).attr("y", height-60).text("Deaths").style("font-size", "15px").attr("alignment-baseline","middle")
 
   });
 }

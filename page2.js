@@ -1,5 +1,5 @@
 
-var margin = {top: 20, right: 20, bottom: 30, left: 70},
+var margin = {top: 50, right: 20, bottom: 30, left: 70},
     width = 960 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
@@ -26,6 +26,13 @@ var xAxis = svg.append("g")
 // Add the Y Axis
 var yAxis = svg.append("g")
     .call(d3.axisLeft(y));
+
+svg.append("text")
+  .attr("x", (width / 2))
+  .attr("y", 0 - (margin.top / 2))
+  .attr("text-anchor", "middle")
+  .style("font-size", "16px")
+  .text("Covid Cases by State");
 
 
 function update(selectedVar){

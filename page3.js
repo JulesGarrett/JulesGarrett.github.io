@@ -1,5 +1,5 @@
 
-var margin = {top: 20, right: 20, bottom: 30, left: 70},
+var margin = {top: 50, right: 20, bottom: 30, left: 70},
     width = 960 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
@@ -65,6 +65,13 @@ d3.csv("perc_demog_20200726_clean.csv").get(function(data) {
   var color = d3.scaleOrdinal()
       .domain(subgroups)
       .range(['#e41a1c','#377eb8','#4daf4a'])
+
+  svg.append("text")
+    .attr("x", (width / 2))
+    .attr("y", 0 - (margin.top / 2))
+    .attr("text-anchor", "middle")
+    .style("font-size", "16px")
+    .text("Percent of Covid Cases/Deaths by Racial Group");
 
   function update(selectedVar){
       d3.selectAll(".bar").remove();
