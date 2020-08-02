@@ -109,7 +109,7 @@ d3.csv("perc_demog_20200726_clean.csv").get(function(data) {
       }
       var mousemove = function(d) {
         tooltip
-          .style("left", (d3.mouse(this)[0]) + "px")
+          .style("left", (d3.mouse(this)[0]+200) + "px")
           .style("top", (d3.mouse(this)[1]) + "px")
       }
       var mouseleave = function(d) {
