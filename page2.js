@@ -53,37 +53,12 @@ function update(selectedVar){
     y.domain([0, d3.max(data, function(d) { return +d[selectedVar] }) ]);
     yAxis.transition().duration(1000).call(d3.axisLeft(y));
 
-    var Tooltip = d3.select("#tooltip")
+    var tooltip = d3
+      .select("#tooltip")
       .append("div")
-      .style("opacity", 0)
-      .attr("class", "tooltip")
-      .style("background-color", "white")
-      .style("border", "solid")
-      .style("border-width", "2px")
-      .style("border-radius", "5px")
-      .style("padding", "5px")
-
-    // Three function that change the tooltip when user hover / move / leave a cell
-    var mouseover = function(d) {
-      Tooltip
-        .style("opacity", 1)
-      d3.select(this)
-        .style("stroke", "black")
-        .style("opacity", 1)
-    }
-    var mousemove = function(d) {
-      Tooltip
-        .html("The exact value of<br>this cell is: " + d.positive)
-        .style("left", (d3.mouse(this)[0]+70) + "px")
-        .style("top", (d3.mouse(this)[1]) + "px")
-    }
-    var mouseleave = function(d) {
-      Tooltip
-        .style("opacity", 0)
-      d3.select(this)
-        .style("stroke", "none")
-        .style("opacity", 0.8)
-    }
+      .style("position", "absolute")
+      .style("visibility", "hidden")
+      .attr("class", "tooltip");
 
     // variable u: map data to existing bars
     var bars = svg.selectAll("rect")
@@ -101,9 +76,21 @@ function update(selectedVar){
         .attr("width", x.bandwidth())
         .attr("height", function(d) { return height - y(d[selectedVar]); })
         .attr("fill", "#69b3a2")
-        .on('mouseover', mouseover)
-        .on('mousemove', mousemove)
-        .on('mouseout', mouseout)
+        .on("mouseover", function () {
+          return tooltip.style("visibility", "visible");
+        })
+        .on("mousemove", function (d) {
+          let key = d.state;
+          let value = d.positive;
+          return tooltip
+            .style("top", event.pageY - 10 + "px")
+            .style("left", event.pageX + 10 + "px")
+            .html("year: " + "2019" + "<br/>" + key + ":" + value + "%")
+            .style("font-size", "small");
+        })
+        .on("mouseout", function () {
+          return tooltip.style("visibility", "hidden");
+        });
   })
 }
 
