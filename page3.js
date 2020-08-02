@@ -50,7 +50,7 @@ function update(selectedVar){
         .attr("transform", "translate(0," + height + ")")
         .call(d3.axisBottom(x).tickSize(0))
         .selectAll(".tick text")
-        .call(wrap, x.rangeBand());
+        .call(wrap, x.bandwidth());
 
 
     var y = d3.scaleLinear()
