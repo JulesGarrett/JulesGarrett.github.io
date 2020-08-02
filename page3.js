@@ -67,7 +67,9 @@ d3.csv("perc_demog_20200726_clean.csv").get(function(data) {
       .range(['#e41a1c','#377eb8','#4daf4a'])
 
   function update(selectedVar){
+      console.log(data)
       data = data.filter(function(d){return d.state==selectedVar})
+      console.log(data)
 
       svg.append("g")
         .selectAll("g")
@@ -85,13 +87,9 @@ d3.csv("perc_demog_20200726_clean.csv").get(function(data) {
           .attr("height", function(d) { return height - y(d.value); })
           .attr("fill", function(d) { return color(d.key); });
   }
-
   update('United States')
   d3.select("#selectButton").on("change", function(d) {
-    // recover the option that has been chosen
     var selectedOption = d3.select(this).property("value")
-    // run the updateChart function with this selected option
-    selected1 = selectedOption
     update(selectedOption)
   });
 });
