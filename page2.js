@@ -56,7 +56,7 @@ function update(selectedVar){
     // Three function that change the tooltip when user hover / move / leave a cell
     var mouseover = function(d) {
       tooltip
-          .html("State: "+d.full_name+"<br>"+selectedVar+": "+d[selectedVar])
+          .html("State: "+d.full_name+d.state+"<br>"+selectedVar+": "+d[selectedVar])
           .style("opacity", 1)
           .style("color", "black")
     }
