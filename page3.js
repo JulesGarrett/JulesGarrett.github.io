@@ -43,16 +43,17 @@ function update(selectedVar){
 
     var x = d3.scaleBand()
         .range([0, width])
-        .padding(0.8)
+        .padding(0.2)
         .domain(groups);
 
     var xAxis = svg.append("g")
         .attr("transform", "translate(0," + height + ")")
-        .call(d3.axisBottom(x));
+        .call(d3.axisBottom(x).tickSize(0));
 
 
     var y = d3.scaleLinear()
-        .range([height, 0]);
+        .range([height, 0])
+        .domain([0,1]);
 
     var yAxis = svg.append("g")
         .call(d3.axisLeft(y));
@@ -71,6 +72,10 @@ function update(selectedVar){
         .range([0, x.bandwidth()])
         .padding([0.05])
 
+    var color = d3.scaleOrdinal()
+        .domain(subgroups)
+        .range(['#e41a1c','#377eb8','#4daf4a'])
+
     svg.append("g")
       .selectAll("g")
       // Enter in data = loop group per group
@@ -85,7 +90,7 @@ function update(selectedVar){
         .attr("y", function(d) { return y(d.value); })
         .attr("width", xSubgroup.bandwidth())
         .attr("height", function(d) { return height - y(d.value); })
-        .attr("fill", "#69b3a2");
+        .attr("fill", function(d) { return color(d.key); });
 
 }
 )}
