@@ -83,17 +83,47 @@ async function graph1(){
     svg.append("text").attr("x", width/2+80).attr("y", 10).text("Cases").style("font-size", "15px").attr("alignment-baseline","middle")
     svg.append("text").attr("x", width/2-120).attr("y", 10).text("Deaths").style("font-size", "15px").attr("alignment-baseline","middle")
 
+    // Annotation: First Case
     svg.append("line")
       .attr("x1", width/10)
-      .attr("x2", 0)
+      .attr("x2", 10)
       .attr("y1", height/3)
       .attr("y2", height-10)
       .style("stroke", "green")
     svg.append("text")
-      .attr("x", width/5)
+      .attr("x", width/10)
       .attr("y", height/3)
       .text("Jan. 21: The first reported Covid Case in the US")
-      .style("font-size", "15px")
+      .style("font-size", "10px")
+      .attr("alignment-baseline","middle")
+
+    // Annotation: LockDown
+    svg.append("line")
+      .attr("x1", width/5)
+      .attr("x2", width/4)
+      .attr("y1", height/5)
+      .attr("y2", height-10)
+      .style("stroke", "green")
+    svg.append("text")
+      .attr("x", width/5)
+      .attr("y", height/5)
+      .text("Mar. 13: Trump declares national emergency")
+      .style("font-size", "10px")
       .attr("alignment-baseline","middle")
   });
+
+  // Annotation: ReOpen
+  svg.append("line")
+    .attr("x1", width/2)
+    .attr("x2", width/1.5)
+    .attr("y1", height/5)
+    .attr("y2", height-10)
+    .style("stroke", "green")
+  svg.append("text")
+    .attr("x", width/5)
+    .attr("y", height/5)
+    .text("Mid-May: States start to reopen")
+    .style("font-size", "10px")
+    .attr("alignment-baseline","middle")
+});
 }
