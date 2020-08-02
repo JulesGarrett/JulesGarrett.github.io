@@ -15,7 +15,7 @@ var svg = d3.select("#dataviz_area").append("svg")
           "translate(" + margin.left + "," + margin.top + ")");
 
 
-function update(selectedVar){
+
 
   // Get the data
   d3.csv("perc_demog_20200726_clean.csv", function(error, data) {
@@ -74,7 +74,8 @@ function update(selectedVar){
     var color = d3.scaleOrdinal()
         .domain(subgroups)
         .range(['#e41a1c','#377eb8','#4daf4a'])
-
+        
+function update(selectedVar, data){
     data = data.filter(function(d){return d.state==selectedVar})
 
     svg.append("g")
