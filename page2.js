@@ -69,6 +69,26 @@ function update(selectedVar){
         .attr("width", x.bandwidth())
         .attr("height", function(d) { return height - y(d[selectedVar]); })
         .attr("fill", "#69b3a2")
+        .on('mouseover', mouseover)
+        .on('mousemove', mousemove)
+        .on('mouseout', mouseout)
+
+    var div = d3.select('#dataviz_area').append('div')
+    .attr('class', 'tooltip')
+    .style('display', 'none');
+    function mouseover(){
+        div.style('display', 'inline');
+    }
+    function mousemove(){
+        var d = d3.select(this).data()[0]
+        div
+            .html(d.country + '<hr/>' + d.income)
+            .style('left', (d3.event.pageX - 34) + 'px')
+            .style('top', (d3.event.pageY - 12) + 'px');
+    }
+    function mouseout(){
+        div.style('display', 'none');
+    }
   })
 
 }
