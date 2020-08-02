@@ -127,8 +127,8 @@ async function graph1(){
 
 // Annotation: First Day of Summer
 svg.append("line")
-  .attr("x1", width-(width/6))
-  .attr("x2", width-(width/4))
+  .attr("x1", width-(width/8))
+  .attr("x2", width-(width/6))
   .attr("y1", height/1.5)
   .attr("y2", height-10)
   .style("stroke", "gray")
