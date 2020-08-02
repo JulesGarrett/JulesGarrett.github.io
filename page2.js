@@ -50,14 +50,14 @@ var tooltip = d3.select("#dataviz_area")
 // Three function that change the tooltip when user hover / move / leave a cell
 var mouseover = function(d) {
   tooltip
-      .html("TESTING")
+      .html("State: "+d.full_name+"<br>"+selectedVar+": "+d[selectedVar])
       .style("opacity", 1)
       .style("color", "red")
 }
 var mousemove = function(d) {
   tooltip
-    .style("left", (d3.mouse(this)[0]+90) + "px") // It is important to put the +90: other wise the tooltip is exactly where the point is an it creates a weird effect
-    .style("top", (d3.mouse(this)[1]) + "px")
+    .style("left", (d3.mouse(this)[0]+90) + "px")
+    .style("top", (d3.mouse(this)[1]+90) + "px")
 }
 var mouseleave = function(d) {
   tooltip
