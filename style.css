@@ -73,6 +73,7 @@ a {
 .dropdown{
   width: 80%;
   float: left;
+  align-items: left;
   padding: 0px 25px;
   text-align: center;
   text-decoration: none;
