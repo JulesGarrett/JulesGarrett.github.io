@@ -100,7 +100,7 @@ d3.csv("perc_demog_20200726_clean.csv").get(function(data) {
       // Three function that change the tooltip when user hover / move / leave a cell
       var mouseover = function(d) {
         tooltip
-            .html("Percent of Cases: "+d.cases+"<br> Percent of Deaths: "+d.deaths+" Percent of Population: "+d.population)
+            .html("Percent of Cases: "+d3.format(".0%")(d.cases)+"<br> Percent of Deaths: "+d3.format(".0%")(d.deaths)+"<br>Percent of Population: "+d3.format(".0%")(d.population))
             .style("opacity", 1)
             .style("color", "black")
       }
