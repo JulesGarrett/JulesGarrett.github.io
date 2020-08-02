@@ -103,3 +103,7 @@ a {
   stroke-width: 2px;
   stroke:"blue"
 }
+#selectButton{
+  align-items: left;
+  align-content: left;
+}
