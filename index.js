@@ -85,7 +85,7 @@ async function graph1(){
 
     // Annotation: First Case
     svg.append("line")
-      .attr("x1", width/10)
+      .attr("x1", 10)
       .attr("x2", 10)
       .attr("y1", height/3)
       .attr("y2", height-10)
@@ -114,7 +114,7 @@ async function graph1(){
   // Annotation: ReOpen
   svg.append("line")
     .attr("x1", width/2)
-    .attr("x2", width/1.8)
+    .attr("x2", width/2)
     .attr("y1", height-80)
     .attr("y2", height-10)
     .style("stroke", "gray")

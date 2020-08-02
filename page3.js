@@ -109,8 +109,8 @@ d3.csv("perc_demog_20200726_clean.csv").get(function(data) {
       }
       var mousemove = function(d) {
         tooltip
-          .style("left", (d3.mouse(this)[0]+20) + "px")
-          .style("top", (d3.mouse(this)[1]+20) + "px")
+          .style("left", (d3.mouse(this)[0]) + "px")
+          .style("top", (d3.mouse(this)[1]) + "px")
       }
       var mouseleave = function(d) {
         tooltip
@@ -151,7 +151,7 @@ d3.csv("perc_demog_20200726_clean.csv").get(function(data) {
   svg.append("text")
     .attr("x", width/5-10)
     .attr("y", 50)
-    .text("Specifically Black Americans has see a large discrepancy between % population and % deaths")
+    .text("Black Americans has the largest \n   discrepancy between % population and % deaths")
     .style("font-size", "12px")
     .attr("alignment-baseline","middle")
 });
