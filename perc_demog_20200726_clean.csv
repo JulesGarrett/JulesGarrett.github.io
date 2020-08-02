@@ -1,0 +1,514 @@
+State,Group,Cases,Deaths,Population
+Alaska,White,0.320919176,0.55,0.6
+Alabama,White,0.311082806,0.502376103,0.66
+Arkansas,White,0.495533749,0.578553616,0.72
+American Samoa,White,,,
+Arizona,White,0.158943054,0.373071104,0.54
+California,White,0.112346498,0.293963878,0.37
+Colorado,White,0.301064598,0.620710415,0.68
+Connecticut,White,0.35228391,0.7323816,0.66
+District of Columbia,White,0.202801358,0.106712565,0.37
+Delaware,White,0.333170049,0.618307427,0.62
+Florida,White,0.20698352,0.460482251,0.53
+Georgia,White,0.229474913,0.454831332,0.52
+Guam,White,0.103857567,0,
+Hawaii,White,0.143196673,0,0.21
+Iowa,White,0.663382132,0.799516908,0.86
+Idaho,White,0.475821093,0.904109589,0.82
+Illinois,White,0.229020189,0.433992095,0.61
+Indiana,White,0.458539088,0.600413365,0.79
+Kansas,White,0.651439723,0.714723926,0.76
+Kentucky,White,0.522101998,0.755714286,0.85
+Louisiana,White,0.289688958,0.446186553,0.59
+Massachusetts,White,0.309874867,0.751905264,0.71
+Maryland,White,0.215981277,0.425290698,0.5
+Maine,White,0.610120608,0.890756303,0.93
+Michigan,White,0.413980914,0.51953125,0.75
+Minnesota,White,0.450804449,0.781908302,0.8
+Missouri,White,0.470007394,0.595655806,0.8
+Northern Mariana Islands,White,0,0,
+Mississippi,White,0.283630315,0.411371237,0.57
+Montana,White,0.578096948,0.369565217,0.86
+North Carolina,White,0.394231366,0.556862745,0.63
+North Dakota,White,0,0,0.84
+Nebraska,White,0.58493785,0.759493671,0.79
+New Hampshire,White,0.639527657,0.931540342,0.9
+New Jersey,White,0.219259268,0.466079686,0.55
+New Mexico,White,0.130973637,0.159609121,0.37
+Nevada,White,0.18815209,0.400544959,0.49
+New York,White,0,0.305731807,0.55
+Ohio,White,0.482640087,0.757181736,0.79
+Oklahoma,White,0.563496883,0.745967742,0.65
+Oregon,White,0.395989975,0.698961938,0.75
+Pennsylvania,White,0.324877822,0.704973307,0.76
+Puerto Rico,White,0,0,0.01
+Rhode Island,White,0.271016242,0.660678643,0.72
+South Carolina,White,0.326358699,0.430583501,0.64
+South Dakota,White,0.392138177,0,0.82
+Tennessee,White,0.423799182,0.561530507,0.74
+Texas,White,0.021854759,0.066693132,0.41
+United States,White,0.233379274,0.47182693,0.6
+Utah,White,0.390988334,0.510948905,0.78
+Virginia,White,0.227866662,0.543310876,0.62
+Virgin Islands,White,0,0,
+Vermont,White,0.820714286,0.946428571,0.93
+Washington,White,0.244115133,0.656895403,0.68
+Wisconsin,White,0.607896735,0.699666296,0.81
+West Virginia,White,0.774161074,0.563106796,0.92
+Wyoming,White,0.484444444,0.48,0.84
+Alaska,Black,0.027733756,0,0.03
+Alabama,Black,0.280840921,0.406653089,0.26
+Arkansas,Black,0.211298967,0.264339152,0.15
+American Samoa,Black,,,
+Arizona,Black,0.021337662,0.02934947,0.04
+California,Black,0.027560348,0.082818441,0.05
+Colorado,Black,0.043734211,0.066225166,0.04
+Connecticut,Black,0.130720026,0.147971901,0.1
+District of Columbia,Black,0.492529711,0.7383821,0.45
+Delaware,Black,0.253603919,0.25388601,0.21
+Florida,Black,0.138587489,0.19909578,0.15
+Georgia,Black,0.256518193,0.453687822,0.31
+Guam,Black,0,0,
+Hawaii,Black,0.007130125,0,0.02
+Iowa,Black,0.079204204,0.049516908,0.03
+Idaho,Black,0.012213237,0.020547945,0.01
+Illinois,Black,0.165452376,0.267852437,0.14
+Indiana,Black,0.11168473,0.131588012,0.09
+Kansas,Black,0.073439802,0.193251534,0.05
+Kentucky,Black,0.080172828,0.134285714,0.08
+Louisiana,Black,0.341095432,0.479138985,0.32
+Massachusetts,Black,0.093603258,0.081955681,0.07
+Maryland,Black,0.299899699,0.40755814,0.29
+Maine,Black,0.225222863,0.025210084,0.01
+Michigan,Black,0.264813469,0.39546875,0.14
+Minnesota,Black,0.205266553,0.092317224,0.06
+Missouri,Black,0.220001431,0.330827068,0.11
+Northern Mariana Islands,Black,0,0,
+Mississippi,Black,0.422663659,0.493645485,0.38
+Montana,Black,0.00598444,0,0.001
+North Carolina,Black,0.168968974,0.312605042,0.21
+North Dakota,Black,0,0,0.03
+Nebraska,Black,0.060931026,0.075949367,0.04
+New Hampshire,Black,0.052050963,0.02200489,0.01
+New Jersey,Black,0.103126063,0.157471337,0.13
+New Mexico,Black,0.017960298,0.006514658,0.02
+Nevada,Black,0.050416637,0.096730245,0.09
+New York,Black,0,0.225054057,0.14
+Ohio,Black,0.255718245,0.193831267,0.12
+Oklahoma,Black,0.072079271,0.0625,0.07
+Oregon,Black,0.036161833,0.020761246,0.02
+Pennsylvania,Black,0.135908774,0.20848553,0.1
+Puerto Rico,Black,0,0,0.001
+Rhode Island,Black,0.091692274,0.050898204,0.06
+South Carolina,Black,0.239325607,0.352783367,0.26
+South Dakota,Black,0.119833234,0,0.02
+Tennessee,Black,0.193206013,0.347466391,0.17
+Texas,Black,0.010635232,0.019650655,0.12
+United States,Black,0.118102907,0.2063637,0.12
+Utah,Black,0.024780765,0.018248175,0.01
+Virginia,Black,0.172029279,0.237728585,0.19
+Virgin Islands,Black,0,0,
+Vermont,Black,0.113571429,0,0.01
+Washington,Black,0.03615465,0.032644903,0.04
+Wisconsin,Black,0.151556568,0.225806452,0.06
+West Virginia,Black,0.076006711,0.029126214,0.04
+Wyoming,Black,0.00969697,0,0
+Alaska,LatinX,0,0,0.07
+Alabama,LatinX,0,0,0.04
+Arkansas,LatinX,0,0,0.08
+American Samoa,LatinX,,,
+Arizona,LatinX,0.226961867,0.272919818,0.32
+California,LatinX,0.35928087,0.444391635,0.39
+Colorado,LatinX,0.331153013,0.219145093,0.22
+Connecticut,LatinX,0.189867968,0.086335826,0.17
+District of Columbia,LatinX,0,0.13080895,0.11
+Delaware,LatinX,0.258642407,0.067357513,0.09
+Florida,LatinX,0.247735664,0.243134628,0.26
+Georgia,LatinX,0.132721654,0.058604917,0.1
+Guam,LatinX,0,0,
+Hawaii,LatinX,0,0,0.1
+Iowa,LatinX,0,0,0.06
+Idaho,LatinX,0,0,0.13
+Illinois,LatinX,0.302178773,0.202898551,0.17
+Indiana,LatinX,0,0,0.07
+Kansas,LatinX,0,0,0.12
+Kentucky,LatinX,0,0,0.04
+Louisiana,LatinX,0,0,0.05
+Massachusetts,LatinX,0.195145153,0.069644741,0.12
+Maryland,LatinX,0.251134355,0.114244186,0.1
+Maine,LatinX,0,0,0.02
+Michigan,LatinX,0,0,0.05
+Minnesota,LatinX,0,0,0.05
+Missouri,LatinX,0,0,0.04
+Northern Mariana Islands,LatinX,0,0,
+Mississippi,LatinX,0.035389263,0.016053512,0.03
+Montana,LatinX,0,0,0.04
+North Carolina,LatinX,0,0,0.1
+North Dakota,LatinX,0,0,0.04
+Nebraska,LatinX,0,0,0.11
+New Hampshire,LatinX,0.109850839,0.026894866,0.04
+New Jersey,LatinX,0.184073638,0.174320644,0.21
+New Mexico,LatinX,0.391292931,0.096091205,0.49
+Nevada,LatinX,0.203790584,0.148501362,0.29
+New York,LatinX,0,0.236857963,0.19
+Ohio,LatinX,0,0,0.04
+Oklahoma,LatinX,0,0,0.11
+Oregon,LatinX,0,0,0.13
+Pennsylvania,LatinX,0,0,0.08
+Puerto Rico,LatinX,0,0,0.99
+Rhode Island,LatinX,0.338619403,0.084830339,0.16
+South Carolina,LatinX,0,0,0.06
+South Dakota,LatinX,0.139964264,0,0.04
+Tennessee,LatinX,0,0,0.05
+Texas,LatinX,0.034009684,0.047042477,0.4
+United States,LatinX,0.136948166,0.141476435,0.18
+Utah,LatinX,0.388407553,0.237226277,0.14
+Virginia,LatinX,0.300318091,0.110683349,0.1
+Virgin Islands,LatinX,0,0,
+Vermont,LatinX,0,0,0.02
+Washington,LatinX,0.288819227,0.133244504,0.13
+Wisconsin,LatinX,0,0,0.07
+West Virginia,LatinX,0,0,0.01
+Wyoming,LatinX,0.126060606,0.08,0.1
+Alaska,Asian,0.031299525,0.1,0.06
+Alabama,Asian,0.00360683,0.002715547,0.01
+Arkansas,Asian,0.014525024,0.014962594,0.02
+American Samoa,Asian,,,
+Arizona,Asian,0.0073327,0.010590015,0.03
+California,Asian,0.035467168,0.125475285,0.15
+Colorado,Asian,0.019216889,0.031908489,0.03
+Connecticut,Asian,0.014289815,0.010876954,0.05
+District of Columbia,Asian,0.015534805,0.013769363,0.04
+Delaware,Asian,0.013995801,0.001727116,0.04
+Florida,Asian,0,0,0.03
+Georgia,Asian,0.01205099,0.016866781,0.04
+Guam,Asian,0.37388724,0,
+Hawaii,Asian,0.251931075,0,0.38
+Iowa,Asian,0.049502628,0.028985507,0.03
+Idaho,Asian,0.008307201,0.01369863,0.02
+Illinois,Asian,0.026577323,0.046508564,0.06
+Indiana,Asian,0.013002629,0.004822597,0.02
+Kansas,Asian,0.036361464,0.027607362,0.03
+Kentucky,Asian,0.018095203,0.011428571,0.01
+Louisiana,Asian,0.04148772,0.006112145,0.02
+Massachusetts,Asian,0.021031331,0.025677102,0.07
+Maryland,Asian,0.019069112,0.038081395,0.06
+Maine,Asian,0.026481384,0,0.01
+Michigan,Asian,0.019778216,0.01234375,0.03
+Minnesota,Asian,0.064062714,0.043370508,0.05
+Missouri,Asian,0,0,0.02
+Northern Mariana Islands,Asian,0,0,
+Mississippi,Asian,0.003154634,0,0.01
+Montana,Asian,0.002692998,0,0.01
+North Carolina,Asian,0.012491904,0.014565826,0.03
+North Dakota,Asian,0,0,0.02
+Nebraska,Asian,0.052806889,0.056962025,0.02
+New Hampshire,Asian,0.026569298,0.009779951,0.03
+New Jersey,Asian,0.030647346,0.047507443,0.1
+New Mexico,Asian,0.006459406,0.001628664,0.02
+Nevada,Asian,0.044558037,0.113079019,0.08
+New York,Asian,0,0.059763922,0.09
+Ohio,Asian,0.026405624,0.010885999,0.02
+Oklahoma,Asian,0.052325396,0.024193548,0.02
+Oregon,Asian,0.03031388,0.041522491,0.05
+Pennsylvania,Asian,0.01396323,0.021213824,0.04
+Puerto Rico,Asian,0,0,
+Rhode Island,Asian,0,0,0.03
+South Carolina,Asian,0.007241468,0.00804829,0.02
+South Dakota,Asian,0.085646218,0,0.01
+Tennessee,Asian,0.0095597,0.015511892,0.02
+Texas,Asian,0.00178957,0.003175863,0.05
+United States,Asian,0.016968951,0.037325279,0.06
+Utah,Asian,0.021804967,0.054744526,0.02
+Virginia,Asian,0.030342805,0.057747834,0.07
+Virgin Islands,Asian,0,0,
+Vermont,Asian,0.037857143,0.035714286,0.02
+Washington,Asian,0.034805738,0.083277815,0.09
+Wisconsin,Asian,0.031529992,0.028921023,0.03
+West Virginia,Asian,0,0,0.01
+Wyoming,Asian,0.004848485,0,0.01
+Alaska,American Indialaska Native,0.125990491,0.25,0.16
+Alabama,American Indialaska Native,0,0,0.001
+Arkansas,American Indialaska Native,0.002925718,0.004987531,0.01
+American Samoa,American Indialaska Native,,,
+Arizona,American Indialaska Native,0.058285086,0.126172466,0.04
+California,American Indialaska Native,0.001459246,0.00368346,0.001
+Colorado,American Indialaska Native,0.004826777,0.006622517,0.001
+Connecticut,American Indialaska Native,0.000902083,0.000453206,0.001
+District of Columbia,American Indialaska Native,0.00237691,0,
+Delaware,American Indialaska Native,0,0,0.001
+Florida,American Indialaska Native,0,0,0.001
+Georgia,American Indialaska Native,0.000571588,0.001143511,0.001
+Guam,American Indialaska Native,0,0,
+Hawaii,American Indialaska Native,0,0,
+Iowa,American Indialaska Native,0.009900526,0.009661836,0.001
+Idaho,American Indialaska Native,0.006711779,0.01369863,0.01
+Illinois,American Indialaska Native,0.001355218,0.001317523,0.001
+Indiana,American Indialaska Native,0,0,0.001
+Kansas,American Indialaska Native,0.006770481,0.009202454,0.01
+Kentucky,American Indialaska Native,0.003028177,0,0.001
+Louisiana,American Indialaska Native,0.002017216,0.001062982,0.01
+Massachusetts,American Indialaska Native,0,0,0.001
+Maryland,American Indialaska Native,0,0,0.001
+Maine,American Indialaska Native,0.001573152,0,0.001
+Michigan,American Indialaska Native,0.003796402,0.00296875,0.001
+Minnesota,American Indialaska Native,0.008406154,0.019206939,0.01
+Missouri,American Indialaska Native,0,0,0.001
+Northern Mariana Islands,American Indialaska Native,0,0,
+Mississippi,American Indialaska Native,0.022713368,0.05083612,0.001
+Montana,American Indialaska Native,0.118192699,0.217391304,0.06
+North Carolina,American Indialaska Native,0.009785916,0.014565826,0.01
+North Dakota,American Indialaska Native,0,0,0.05
+Nebraska,American Indialaska Native,0.011008205,0.028481013,0.01
+New Hampshire,American Indialaska Native,0,0,
+New Jersey,American Indialaska Native,0,0,0.001
+New Mexico,American Indialaska Native,0.385988867,0.384364821,0.09
+Nevada,American Indialaska Native,0.002987653,0.005449591,0.01
+New York,American Indialaska Native,0,0,0.001
+Ohio,American Indialaska Native,0.001260809,0.000302389,0.001
+Oklahoma,American Indialaska Native,0.082883171,0.088709677,0.08
+Oregon,American Indialaska Native,0.022974102,0.010380623,0.01
+Pennsylvania,American Indialaska Native,0,0,0.001
+Puerto Rico,American Indialaska Native,0,0,
+Rhode Island,American Indialaska Native,0,0,
+South Carolina,American Indialaska Native,0,0,0.001
+South Dakota,American Indialaska Native,0.162001191,0,0.09
+Tennessee,American Indialaska Native,0.001181656,0.002068252,0.001
+Texas,American Indialaska Native,0,0,0.001
+United States,American Indialaska Native,0.007185011,0.007276814,0.01
+Utah,American Indialaska Native,0.021515287,0.076642336,0.01
+Virginia,American Indialaska Native,0.001170669,0.000962464,0.001
+Virgin Islands,American Indialaska Native,0,0,
+Vermont,American Indialaska Native,0.001428571,0,0.001
+Washington,American Indialaska Native,0.011608245,0.021985343,0.01
+Wisconsin,American Indialaska Native,0.009643128,0.011123471,0.01
+West Virginia,American Indialaska Native,0,0,0.001
+Wyoming,American Indialaska Native,0.153131313,0.4,0.02
+Alaska,Native Hawaiian/Other Pacific Islander,0.036450079,0.05,0.01
+Alabama,Native Hawaiian/Other Pacific Islander,0,0,
+Arkansas,Native Hawaiian/Other Pacific Islander,0.053646791,0.074812968,0.001
+American Samoa,Native Hawaiian/Other Pacific Islander,,,
+Arizona,Native Hawaiian/Other Pacific Islander,0,0,0.001
+California,Native Hawaiian/Other Pacific Islander,0.003831071,0.005346958,0.001
+Colorado,Native Hawaiian/Other Pacific Islander,0.002954709,0.003010235,0.001
+Connecticut,Native Hawaiian/Other Pacific Islander,0,0,
+District of Columbia,Native Hawaiian/Other Pacific Islander,0.002631579,0,
+Delaware,Native Hawaiian/Other Pacific Islander,0,0,
+Florida,Native Hawaiian/Other Pacific Islander,0,0,0.001
+Georgia,Native Hawaiian/Other Pacific Islander,0.001012188,0.002001144,0.001
+Guam,Native Hawaiian/Other Pacific Islander,0.379821958,0,
+Hawaii,Native Hawaiian/Other Pacific Islander,0.278074866,0,0.1
+Iowa,Native Hawaiian/Other Pacific Islander,0.009900526,0.009661836,
+Idaho,Native Hawaiian/Other Pacific Islander,0.002860758,0,
+Illinois,Native Hawaiian/Other Pacific Islander,0.002339777,0.001185771,0.001
+Indiana,Native Hawaiian/Other Pacific Islander,0,0,
+Kansas,Native Hawaiian/Other Pacific Islander,0,0,
+Kentucky,Native Hawaiian/Other Pacific Islander,0.001366372,0,
+Louisiana,Native Hawaiian/Other Pacific Islander,0.001069032,0.001328727,
+Massachusetts,Native Hawaiian/Other Pacific Islander,0,0,
+Maryland,Native Hawaiian/Other Pacific Islander,0,0,
+Maine,Native Hawaiian/Other Pacific Islander,0.000524384,0,
+Michigan,Native Hawaiian/Other Pacific Islander,0,0,
+Minnesota,Native Hawaiian/Other Pacific Islander,0.00218951,0.001858736,
+Missouri,Native Hawaiian/Other Pacific Islander,0,0,0.001
+Northern Mariana Islands,Native Hawaiian/Other Pacific Islander,0,0,
+Mississippi,Native Hawaiian/Other Pacific Islander,0,0,
+Montana,Native Hawaiian/Other Pacific Islander,0,0,
+North Carolina,Native Hawaiian/Other Pacific Islander,0.001934116,0.001680672,0.001
+North Dakota,Native Hawaiian/Other Pacific Islander,0,0,
+Nebraska,Native Hawaiian/Other Pacific Islander,0.001340483,0,
+New Hampshire,Native Hawaiian/Other Pacific Islander,0,0,
+New Jersey,Native Hawaiian/Other Pacific Islander,0,0,
+New Mexico,Native Hawaiian/Other Pacific Islander,0,0,
+Nevada,Native Hawaiian/Other Pacific Islander,0,0,0.01
+New York,Native Hawaiian/Other Pacific Islander,0,0,
+Ohio,Native Hawaiian/Other Pacific Islander,0.001831741,0.000302389,
+Oklahoma,Native Hawaiian/Other Pacific Islander,0,0,0.001
+Oregon,Native Hawaiian/Other Pacific Islander,0.022974102,0.020761246,0.001
+Pennsylvania,Native Hawaiian/Other Pacific Islander,0,0,
+Puerto Rico,Native Hawaiian/Other Pacific Islander,0,0,
+Rhode Island,Native Hawaiian/Other Pacific Islander,0,0,
+South Carolina,Native Hawaiian/Other Pacific Islander,0,0,
+South Dakota,Native Hawaiian/Other Pacific Islander,0,0,
+Tennessee,Native Hawaiian/Other Pacific Islander,0.000777125,0.002068252,
+Texas,Native Hawaiian/Other Pacific Islander,0,0,0.001
+United States,Native Hawaiian/Other Pacific Islander,0.002207894,0.001123832,0.001
+Utah,Native Hawaiian/Other Pacific Islander,0.039238406,0.051094891,0.01
+Virginia,Native Hawaiian/Other Pacific Islander,0,0,0.001
+Virgin Islands,Native Hawaiian/Other Pacific Islander,0,0,
+Vermont,Native Hawaiian/Other Pacific Islander,0,0,
+Washington,Native Hawaiian/Other Pacific Islander,0.018751781,0.013990673,0.01
+Wisconsin,Native Hawaiian/Other Pacific Islander,0,0,0.001
+West Virginia,Native Hawaiian/Other Pacific Islander,0,0,
+Wyoming,Native Hawaiian/Other Pacific Islander,0.003232323,0,
+Alaska,Multiracial,0.022187005,0,0.07
+Alabama,Multiracial,0,0,0.02
+Arkansas,Multiracial,0,0,0.03
+American Samoa,Multiracial,,,
+Arizona,Multiracial,0,0,0.02
+California,Multiracial,0.004838436,0.004990494,0.03
+Colorado,Multiracial,0.008999459,0.012040939,0.03
+Connecticut,Multiracial,0.002972773,0.007477906,0.02
+District of Columbia,Multiracial,0,0,0.03
+Delaware,Multiracial,0,0,0.03
+Florida,Multiracial,0,0,0.02
+Georgia,Multiracial,0,0,0.02
+Guam,Multiracial,0,0,
+Hawaii,Multiracial,0,0,0.2
+Iowa,Multiracial,0,0,0.02
+Idaho,Multiracial,0.033338835,0,0.02
+Illinois,Multiracial,0,0,0.02
+Indiana,Multiracial,0,0,0.02
+Kansas,Multiracial,0,0,0.03
+Kentucky,Multiracial,0.038812364,0.022857143,0.02
+Louisiana,Multiracial,0,0,0.02
+Massachusetts,Multiracial,0,0,0.03
+Maryland,Multiracial,0,0,0.03
+Maine,Multiracial,0.00681699,0,0.02
+Michigan,Multiracial,0.065727374,0.0159375,0.03
+Minnesota,Multiracial,0.017027349,0.013630731,0.03
+Missouri,Multiracial,0.030004532,0.007518797,0.03
+Northern Mariana Islands,Multiracial,0,0,
+Mississippi,Multiracial,0,0,0.01
+Montana,Multiracial,0,0,0.03
+North Carolina,Multiracial,0,0,0.03
+North Dakota,Multiracial,0,0,0.02
+Nebraska,Multiracial,0,0,0.03
+New Hampshire,Multiracial,0,0,0.02
+New Jersey,Multiracial,0,0,0.02
+New Mexico,Multiracial,0,0,0.02
+Nevada,Multiracial,0,0,0.04
+New York,Multiracial,0,0,0.03
+Ohio,Multiracial,0.029069975,0.012700333,0.03
+Oklahoma,Multiracial,0,0,0.07
+Oregon,Multiracial,0.020706528,0.010380623,0.04
+Pennsylvania,Multiracial,0,0,0.02
+Puerto Rico,Multiracial,0,0,0.001
+Rhode Island,Multiracial,0,0,0.03
+South Carolina,Multiracial,0,0,0.02
+South Dakota,Multiracial,0,0,0.03
+Tennessee,Multiracial,0,0,0.02
+Texas,Multiracial,0,0,0.02
+United States,Multiracial,0.003845696,0.002149329,0.03
+Utah,Multiracial,0,0,0.03
+Virginia,Multiracial,0.003973181,0,0.04
+Virgin Islands,Multiracial,0,0,
+Vermont,Multiracial,0,0,0.02
+Washington,Multiracial,0.015332003,0.011325783,0.05
+Wisconsin,Multiracial,0,0,0.02
+West Virginia,Multiracial,0,0,0.02
+Wyoming,Multiracial,0,0,0.02
+Alaska,Other,0.01703645,0,
+Alabama,Other,0.054619517,0.019687712,
+Arkansas,Other,0.136007042,0.067331671,
+American Samoa,Other,,,
+Arizona,Other,0.021751207,0.01633888,
+California,Other,0.095783397,0.013307985,
+Colorado,Other,0.00676651,0.003612282,
+Connecticut,Other,0.006007053,0.004758668,
+District of Columbia,Other,0.259337861,0.010327022,
+Delaware,Other,0.050454864,0.013816926,
+Florida,Other,0.047497375,0.038010717,
+Georgia,Other,0.026948015,0.004574042,
+Guam,Other,0.086053412,0,
+Hawaii,Other,0.023172906,0,
+Iowa,Other,0.009900526,0,
+Idaho,Other,0.116575893,0.01369863,
+Illinois,Other,0.037285858,0.00685112,
+Indiana,Other,0.163278394,0.124698588,
+Kansas,Other,0.052769923,0.027607362,
+Kentucky,Other,0,0,
+Louisiana,Other,0.076542659,0.004783417,
+Massachusetts,Other,0.053771717,0.064368625,
+Maryland,Other,0.046389168,0.010174419,
+Maine,Other,0.030152071,0,
+Michigan,Other,0.060084698,0.01890625,
+Minnesota,Other,0.119445585,0.013011152,
+Missouri,Other,0.049991652,0.03091061,
+Northern Mariana Islands,Other,0,0,
+Mississippi,Other,0.082402875,0.011371237,
+Montana,Other,0.009575105,0,
+North Carolina,Other,0.116916416,0.064985994,
+North Dakota,Other,0,0,
+Nebraska,Other,0.069055163,0.037974684,
+New Hampshire,Other,0.03853325,0.002444988,
+New Jersey,Other,0.068152295,0.015455755,
+New Mexico,Other,0,0,
+Nevada,Other,0.115024625,0.014986376,
+New York,Other,0,0.065577257,
+Ohio,Other,0.068131267,0.007862111,
+Oklahoma,Other,0.039795429,0.024193548,
+Oregon,Other,0.313999284,0.079584775,
+Pennsylvania,Other,0.010239702,0.047625738,
+Puerto Rico,Other,0,0,
+Rhode Island,Other,0.027052239,0.012974052,
+South Carolina,Other,0.06527174,0.025486251,
+South Dakota,Other,0.100416915,0,
+Tennessee,Other,0.13611395,0.06204757,
+Texas,Other,0.000400885,0.000396983,
+United States,Other,0.052379573,0.032141603,
+Utah,Other,0.122850446,0.080291971,
+Virginia,Other,0.023709012,0.013955727,
+Virgin Islands,Other,0,0,
+Vermont,Other,0.020714286,0.017857143,
+Washington,Other,0.01523701,0.021985343,
+Wisconsin,Other,0.096431283,0.016685206,
+West Virginia,Other,0.149832215,0,
+Wyoming,Other,0.039191919,0,
+Alaska,Unknown,0.418383518,0.05,
+Alabama,Unknown,0.349824703,0.068567549,
+Arkansas,Unknown,0.086062709,0,
+American Samoa,Unknown,,,
+Arizona,Unknown,0.505388423,0.171558245,
+California,Unknown,0.359432966,0.026021863,
+Colorado,Unknown,0.281103392,0.034316677,
+Connecticut,Unknown,0.302956372,0.009743938,
+District of Columbia,Unknown,0.024787776,0,
+Delaware,Unknown,0.09013296,0.044905009,
+Florida,Unknown,0.359195951,0.059276624,
+Georgia,Unknown,0.340702458,0.008290452,
+Guam,Unknown,0.056379822,1,
+Hawaii,Unknown,0.296494355,1,
+Iowa,Unknown,0.178209459,0.099033816,
+Idaho,Unknown,0.344171205,0.034246575,
+Illinois,Unknown,0.235790486,0.039393939,
+Indiana,Unknown,0.253495158,0.138477437,
+Kansas,Unknown,0.179218607,0.027607362,
+Kentucky,Unknown,0.336423058,0.075714286,
+Louisiana,Unknown,0.248098983,0.061387191,
+Massachusetts,Unknown,0.326573675,0.006448587,
+Maryland,Unknown,0.167526389,0.004651163,
+Maine,Unknown,0.099108547,0.084033613,
+Michigan,Unknown,0.171818927,0.03484375,
+Minnesota,Unknown,0.132797685,0.034696406,
+Missouri,Unknown,0.229994991,0.034252297,
+Northern Mariana Islands,Unknown,1,1,
+Mississippi,Unknown,0.150045886,0.016722408,
+Montana,Unknown,0.28545781,0.413043478,
+North Carolina,Unknown,0.295671307,0.034733894,
+North Dakota,Unknown,1,1,
+Nebraska,Unknown,0.219920383,0.041139241,
+New Hampshire,Unknown,0.133467993,0.007334963,
+New Jersey,Unknown,0.39474139,0.139165136,
+New Mexico,Unknown,0.067324861,0.351791531,
+Nevada,Unknown,0.395070373,0.220708447,
+New York,Unknown,1,0.107014994,
+Ohio,Unknown,0.134942253,0.016933777,
+Oklahoma,Unknown,0.18941985,0.054435484,
+Oregon,Unknown,0.156880296,0.117647059,
+Pennsylvania,Unknown,0.515010472,0.017701602,
+Puerto Rico,Unknown,1,1,
+Rhode Island,Unknown,0.271619842,0.190618762,
+South Carolina,Unknown,0.361777854,0.18175721,
+South Dakota,Unknown,0,1,
+Tennessee,Unknown,0.235362374,0.009307135,
+Texas,Unknown,0.931309871,0.863040889,
+United States,Unknown,0.430106844,0.100400365,
+Utah,Unknown,0.113396361,0.04379562,
+Virginia,Unknown,0.240590301,0.035611165,
+Virgin Islands,Unknown,1,1,
+Vermont,Unknown,0.005714286,0,
+Washington,Unknown,0.335176214,0.024650233,
+Wisconsin,Unknown,0.102942293,0.017797553,
+West Virginia,Unknown,0,0.40776699,
+Wyoming,Unknown,0.215353535,0.04,

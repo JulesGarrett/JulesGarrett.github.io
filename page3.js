@@ -18,6 +18,7 @@ var svg = d3.select("#dataviz_area").append("svg")
 var x = d3.scaleBand().range([0, width]).padding(0.4);
 var y = d3.scaleLinear().range([height, 0]);
 
+
 // Add the X Axis
 var xAxis = svg.append("g")
     .attr("transform", "translate(0," + height + ")")
@@ -33,7 +34,17 @@ function update(selectedVar){
   d3.csv("state_data_20200726.csv", function(error, data) {
     if (error) throw error;
 
-        // sort data
+    var all_states = d3.map(data, function(d){return(d.State)}).keys()
+
+    d3.select("#selectButton")
+      .selectAll('myOptions')
+      .data(all_states)
+      .enter()
+      .append('option')
+      .text(function (d) { return d; })
+      .attr("value", function (d) { return d; })
+
+    // sort data
     data.sort(function(b, a) {
       return a[selectedVar] - b[selectedVar];
     });
