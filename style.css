@@ -61,11 +61,13 @@ a {
   margin-left:60px;
   }
 .filter_button{
-  width: 30%;
-  float: center;
+  background-color: #d3d3d3;
+  color: white;
+  padding: 14px 25px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  float: center;
   }
 .dropdown{
   width: 80%;
