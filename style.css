@@ -38,6 +38,7 @@ a {
   text-decoration: none;
   display: inline-block;
   float: center;
+  margin-left:10px;
   }
 .nav{
   float: center;
