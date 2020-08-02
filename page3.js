@@ -67,6 +67,7 @@ d3.csv("perc_demog_20200726_clean.csv").get(function(data) {
       .range(['#e41a1c','#377eb8','#4daf4a'])
 
   function update(selectedVar){
+      d3.selectAll(".bar").remove();
       filtered_data = data.filter(function(d){return d.state==selectedVar})
 
       svg.append("g")
@@ -79,13 +80,13 @@ d3.csv("perc_demog_20200726_clean.csv").get(function(data) {
         .selectAll("rect")
         .data(function(d) { return subgroups.map(function(key) { return {key: key, value: d[key]}; }); })
         .enter().append("rect")
+          .attr("class", "bar")
           .attr("x", function(d) { return xSubgroup(d.key); })
           .attr("y", function(d) {console.log((d.value)); console.log(y(d.value)); return y(d.value); })
           .attr("width", xSubgroup.bandwidth())
           .attr("height", function(d) { return height - y(d.value); })
           .attr("fill", function(d) { return color(d.key); });
   }
-  update('Kansas')
   update('United States')
   d3.select("#selectButton").on("change", function(d) {
     var selectedOption = d3.select(this).property("value")
