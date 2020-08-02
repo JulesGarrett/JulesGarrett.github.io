@@ -31,7 +31,7 @@ d3.csv("perc_demog_20200726_clean.csv", function(error, data) {
     .text(function (d) { return d; })
     .attr("value", function (d) { return d; })
 
-  dropdown.property("selected", function (d) {
+  dropdownButton.property("selected", function (d) {
     return d == "United States";
   });
 
