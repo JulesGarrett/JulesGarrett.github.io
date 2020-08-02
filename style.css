@@ -104,6 +104,7 @@ a {
 .description{
   background-color: #d3d3d3;
   width: 80%;
+  height: 20%;
   margin-left:50px;
   margin-right:50px;
   margin-top:50px;
@@ -112,4 +113,6 @@ a {
   padding-right: 50px;
   padding-top: 50px;
   padding-bottom: 50px;
+  align-self: center;
+  align-content: center;
 }
