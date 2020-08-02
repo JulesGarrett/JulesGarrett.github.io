@@ -47,7 +47,7 @@ d3.csv("perc_demog_20200726_clean.csv").get(function(data) {
       .domain([0,1]);
 
   var yAxis = svg.append("g")
-      .call(d3.axisLeft(y)).tickFormat(d3.format(".2%"));
+      .call(d3.axisLeft(y).tickFormat(d3.format(".2%")));
 
 
   // X axis
