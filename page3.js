@@ -75,7 +75,7 @@ var svg = d3.select("#dataviz_area").append("svg")
         .domain(subgroups)
         .range(['#e41a1c','#377eb8','#4daf4a'])
 
-function update(selectedVar, data){
+function update(selectedVar){
     data = data.filter(function(d){return d.state==selectedVar})
 
     svg.append("g")
