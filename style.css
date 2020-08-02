@@ -99,3 +99,7 @@ a {
   align-self: center;
   align-content: center;
 }
+.line {
+  fill: none;
+  stroke-width: 2px;
+}
