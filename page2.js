@@ -53,7 +53,7 @@ function update(selectedVar){
     y.domain([0, d3.max(data, function(d) { return +d[selectedVar] }) ]);
     yAxis.transition().duration(1000).call(d3.axisLeft(y));
 
-    var Tooltip = d3.select("#dataviz_area")
+    var Tooltip = d3.select("#tooltip")
       .append("div")
       .style("opacity", 0)
       .attr("class", "tooltip")

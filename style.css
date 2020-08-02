@@ -103,10 +103,12 @@ a {
   }
 .description{
   background-color: #d3d3d3;
-  width: 60%;
   float: center;
+  display: flex;
   align-items: center;
-  justify-content: center
+  justify-content: center;
+  margin-left:60px;
+  width: 60%;
 }
 .tooltip{
     position      : absolute;
