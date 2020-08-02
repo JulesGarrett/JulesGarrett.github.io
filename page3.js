@@ -68,7 +68,7 @@ d3.csv("perc_demog_20200726_clean.csv").get(function(data) {
 
   var color = d3.scaleOrdinal()
       .domain(subgroups)
-      .range(['#e41a1c','#377eb8','#4daf4a'])
+      .range(['#40587C','#A4262C','#038387'])
 
   svg.append("text")
     .attr("x", (width / 2))
@@ -77,9 +77,9 @@ d3.csv("perc_demog_20200726_clean.csv").get(function(data) {
     .style("font-size", "16px")
     .text("Percent of Covid Cases/Deaths by Racial Group");
 
-  svg.append("circle").attr("cx",width/3+80).attr("cy",10).attr("r", 6).style("fill", "green")
-  svg.append("circle").attr("cx",width/3+200).attr("cy",10).attr("r", 6).style("fill", "red")
-  svg.append("circle").attr("cx",width/3-50).attr("cy",10).attr("r", 6).style("fill", "blue")
+  svg.append("circle").attr("cx",width/3+80).attr("cy",10).attr("r", 6).style("fill", "#038387")
+  svg.append("circle").attr("cx",width/3+200).attr("cy",10).attr("r", 6).style("fill", "#40587C")
+  svg.append("circle").attr("cx",width/3-50).attr("cy",10).attr("r", 6).style("fill", "#A4262C")
   svg.append("text").attr("x", width/3+110).attr("y", 10).text("Deaths").style("font-size", "15px").attr("alignment-baseline","middle")
   svg.append("text").attr("x", width/3+230).attr("y", 10).text("Population").style("font-size", "15px").attr("alignment-baseline","middle")
   svg.append("text").attr("x", width/3-20).attr("y", 10).text("Cases").style("font-size", "15px").attr("alignment-baseline","middle")
@@ -150,7 +150,7 @@ d3.csv("perc_demog_20200726_clean.csv").get(function(data) {
     .style("stroke", "gray")
   svg.append("text")
     .attr("x", width/5-10)
-    .attr("y", 50)
+    .attr("y", 40)
     .text("Black Americans have the largest \n   discrepancy between % population and % deaths")
     .style("font-size", "12px")
     .attr("alignment-baseline","middle")
