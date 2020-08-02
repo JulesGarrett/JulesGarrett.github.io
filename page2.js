@@ -53,12 +53,44 @@ function update(selectedVar){
     y.domain([0, d3.max(data, function(d) { return +d[selectedVar] }) ]);
     yAxis.transition().duration(1000).call(d3.axisLeft(y));
 
+    var Tooltip = d3.select("#dataviz_area")
+      .append("div")
+      .style("opacity", 0)
+      .attr("class", "tooltip")
+      .style("background-color", "white")
+      .style("border", "solid")
+      .style("border-width", "2px")
+      .style("border-radius", "5px")
+      .style("padding", "5px")
+
+    // Three function that change the tooltip when user hover / move / leave a cell
+    var mouseover = function(d) {
+      Tooltip
+        .style("opacity", 1)
+      d3.select(this)
+        .style("stroke", "black")
+        .style("opacity", 1)
+    }
+    var mousemove = function(d) {
+      Tooltip
+        .html("The exact value of<br>this cell is: " + d.positive)
+        .style("left", (d3.mouse(this)[0]+70) + "px")
+        .style("top", (d3.mouse(this)[1]) + "px")
+    }
+    var mouseleave = function(d) {
+      Tooltip
+        .style("opacity", 0)
+      d3.select(this)
+        .style("stroke", "none")
+        .style("opacity", 0.8)
+    }
+
     // variable u: map data to existing bars
-    var u = svg.selectAll("rect")
+    var bars = svg.selectAll("rect")
       .data(data)
 
     // update bars
-    u
+    bars
       .enter()
       .append("rect")
       .merge(u)
@@ -72,23 +104,6 @@ function update(selectedVar){
         .on('mouseover', mouseover)
         .on('mousemove', mousemove)
         .on('mouseout', mouseout)
-
-    var div = d3.select('#dataviz_area').append('div')
-    .attr('class', 'tooltip')
-    .style('display', 'none');
-    function mouseover(){
-        div.style('display', 'inline');
-    }
-    function mousemove(){
-        var d = d3.select(this).data()[0]
-        div
-            .html(d.state + '<hr/>' + d.positive)
-            .style('left', (d3.event.pageX - 34) + 'px')
-            .style('top', (d3.event.pageY - 12) + 'px');
-    }
-    function mouseout(){
-        div.style('display', 'none');
-    }
   })
 
 }
