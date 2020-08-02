@@ -60,3 +60,12 @@ a {
   text-decoration: none;
   display: inline-block;
   }
+.dropdown{
+  width: 80%;
+  float: left;
+  padding: 0px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-left:60px;
+  }
