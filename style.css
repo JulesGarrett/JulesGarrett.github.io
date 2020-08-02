@@ -33,11 +33,11 @@ a {
 .scroll{
   background-color: #f44336;
   color: white;
-  padding: 14px 25px;
+  padding: 14px 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  margin-left:60px;
+  margin-left:360px;
   float: center;
   }
 .line {
