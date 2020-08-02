@@ -73,6 +73,13 @@ d3.csv("perc_demog_20200726_clean.csv").get(function(data) {
     .style("font-size", "16px")
     .text("Percent of Covid Cases/Deaths by Racial Group");
 
+    svg.append("circle").attr("cx",width-30).attr("cy",height-30).attr("r", 6).style("fill", "blue")
+    svg.append("circle").attr("cx",width-30).attr("cy",height-60).attr("r", 6).style("fill", "red")
+    svg.append("circle").attr("cx",width-30).attr("cy",height-60).attr("r", 6).style("fill", "green")
+    svg.append("text").attr("x", width-50).attr("y", height-30).text("Cases").style("font-size", "15px").attr("alignment-baseline","middle")
+    svg.append("text").attr("x", width-50).attr("y", height-60).text("Deaths").style("font-size", "15px").attr("alignment-baseline","middle")
+    svg.append("text").attr("x", width-50).attr("y", height-60).text("Deaths").style("font-size", "15px").attr("alignment-baseline","middle")
+
   function update(selectedVar){
       d3.selectAll(".bar").remove();
       filtered_data = data.filter(function(d){return d.state==selectedVar})
