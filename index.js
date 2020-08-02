@@ -84,7 +84,7 @@ async function graph1(){
     svg.append("text").attr("x", width/2-120).attr("y", 10).text("Deaths").style("font-size", "15px").attr("alignment-baseline","middle")
 
     svg.append("line")
-      .attr("x1", width/5)
+      .attr("x1", width/10)
       .attr("x2", 0)
       .attr("y1", height/3)
       .attr("y2", height-10)
