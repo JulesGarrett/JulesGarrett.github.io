@@ -62,8 +62,8 @@ function update(selectedVar){
     }
     var mousemove = function(d) {
       tooltip
-        .style("left", (d3.mouse(this)[0]+90) + "px")
-        .style("top", (d3.mouse(this)[1]+90) + "px")
+        .style("left", event.pageX +20 + "px")
+        .style("top", event.pageY +20  + "px")
     }
     var mouseleave = function(d) {
       tooltip
