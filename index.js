@@ -53,12 +53,14 @@ async function graph1(){
         .data([data])
         .attr("class", "line")
         .style("stroke", "#40587C")
+        .style("stroke-width", "2px")
         .attr("d", valueline);
 
     svg.append("path")
         .data([data])
         .attr("class", "line")
         .style("stroke", "#A4262C")
+        .style("stroke-width", "2px")
         .attr("d", valueline2);
 
     // Add the X Axis
