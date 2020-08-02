@@ -125,4 +125,19 @@ async function graph1(){
     .style("font-size", "10px")
     .attr("alignment-baseline","middle")
 });
+
+// Annotation: First Day of Summer
+svg.append("line")
+  .attr("x1", width-(width/5))
+  .attr("x2", width-(width/4))
+  .attr("y1", height/3)
+  .attr("y2", height-10)
+  .style("stroke", "gray")
+svg.append("text")
+  .attr("x", width-(width/5))
+  .attr("y", height/3)
+  .text("Jun. 20: First Offical Day of Summer")
+  .style("font-size", "10px")
+  .attr("alignment-baseline","middle")
+});
 }
