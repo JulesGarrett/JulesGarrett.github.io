@@ -68,7 +68,7 @@ d3.csv("perc_demog_20200726_clean.csv").get(function(data) {
 
   var color = d3.scaleOrdinal()
       .domain(subgroups)
-      .range(['#40587C','#A4262C','#038387'])
+      .range(['#038387','#A4262C','#40587C']) //green: #038387, blue: #40587C, red: #A4262C
 
   svg.append("text")
     .attr("x", (width / 2))
@@ -77,8 +77,8 @@ d3.csv("perc_demog_20200726_clean.csv").get(function(data) {
     .style("font-size", "16px")
     .text("Percent of Covid Cases/Deaths by Racial Group");
 
-  svg.append("circle").attr("cx",width/3+80).attr("cy",10).attr("r", 6).style("fill", "#038387")
-  svg.append("circle").attr("cx",width/3+200).attr("cy",10).attr("r", 6).style("fill", "#40587C")
+  svg.append("circle").attr("cx",width/3+80).attr("cy",10).attr("r", 6).style("fill", "#40587C")
+  svg.append("circle").attr("cx",width/3+200).attr("cy",10).attr("r", 6).style("fill", "#038387")
   svg.append("circle").attr("cx",width/3-50).attr("cy",10).attr("r", 6).style("fill", "#A4262C")
   svg.append("text").attr("x", width/3+110).attr("y", 10).text("Deaths").style("font-size", "15px").attr("alignment-baseline","middle")
   svg.append("text").attr("x", width/3+230).attr("y", 10).text("Population").style("font-size", "15px").attr("alignment-baseline","middle")
