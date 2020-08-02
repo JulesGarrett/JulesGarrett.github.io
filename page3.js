@@ -94,16 +94,15 @@ function update(selectedVar){
         .attr("height", function(d) { return height - y(d.value); })
         .attr("fill", function(d) { return color(d.key); });
 
-    d3.select("#selectButton").on("change", function(d) {
-      // recover the option that has been chosen
-      var selectedOption = d3.select(this).property("value")
-      // run the updateChart function with this selected option
-      selected1 = selectedOption
-      update(selectedOption)
-    })
-
 }
+
+update('United States')
+d3.select("#selectButton").on("change", function(d) {
+  // recover the option that has been chosen
+  var selectedOption = d3.select(this).property("value")
+  // run the updateChart function with this selected option
+  selected1 = selectedOption
+  update(selectedOption)
 })
 
-// Initialize plot
-update('United States')
+})
