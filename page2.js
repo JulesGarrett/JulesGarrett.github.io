@@ -82,7 +82,7 @@ function update(selectedVar){
     function mousemove(){
         var d = d3.select(this).data()[0]
         div
-            .html(d.country + '<hr/>' + d.income)
+            .html(d.state + '<hr/>' + d.positive)
             .style('left', (d3.event.pageX - 34) + 'px')
             .style('top', (d3.event.pageY - 12) + 'px');
     }
