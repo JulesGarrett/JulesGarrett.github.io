@@ -74,16 +74,45 @@ d3.csv("perc_demog_20200726_clean.csv").get(function(data) {
     .style("font-size", "16px")
     .text("Percent of Covid Cases/Deaths by Racial Group");
 
-    svg.append("circle").attr("cx",width/3+80).attr("cy",10).attr("r", 6).style("fill", "green")
-    svg.append("circle").attr("cx",width/3+200).attr("cy",10).attr("r", 6).style("fill", "red")
-    svg.append("circle").attr("cx",width/3-50).attr("cy",10).attr("r", 6).style("fill", "blue")
-    svg.append("text").attr("x", width/3+110).attr("y", 10).text("Deaths").style("font-size", "15px").attr("alignment-baseline","middle")
-    svg.append("text").attr("x", width/3+230).attr("y", 10).text("Population").style("font-size", "15px").attr("alignment-baseline","middle")
-    svg.append("text").attr("x", width/3-20).attr("y", 10).text("Cases").style("font-size", "15px").attr("alignment-baseline","middle")
+  svg.append("circle").attr("cx",width/3+80).attr("cy",10).attr("r", 6).style("fill", "green")
+  svg.append("circle").attr("cx",width/3+200).attr("cy",10).attr("r", 6).style("fill", "red")
+  svg.append("circle").attr("cx",width/3-50).attr("cy",10).attr("r", 6).style("fill", "blue")
+  svg.append("text").attr("x", width/3+110).attr("y", 10).text("Deaths").style("font-size", "15px").attr("alignment-baseline","middle")
+  svg.append("text").attr("x", width/3+230).attr("y", 10).text("Population").style("font-size", "15px").attr("alignment-baseline","middle")
+  svg.append("text").attr("x", width/3-20).attr("y", 10).text("Cases").style("font-size", "15px").attr("alignment-baseline","middle")
+
+  var tooltip = d3.select("#dataviz_area")
+    .append("div")
+    .style("opacity", 0)
+    .attr("class", "tooltip")
+    .style("background-color", "#dedede")
+    .style("border", "solid")
+    .style("border-width", "1px")
+    .style("border-radius", "5px")
+    .style("padding", "10px")
+    .style("position", "absolute")
+    .style("display", "block")
 
   function update(selectedVar){
       d3.selectAll(".bar").remove();
       filtered_data = data.filter(function(d){return d.state==selectedVar})
+
+      // Three function that change the tooltip when user hover / move / leave a cell
+      var mouseover = function(d) {
+        tooltip
+            .html("Percent of Cases: "+d.cases+"<br> Percent of Deaths: "+d.deaths+" Percent of Population: "+d.population)
+            .style("opacity", 1)
+            .style("color", "black")
+      }
+      var mousemove = function(d) {
+        tooltip
+          .style("left", (d3.mouse(this)[0]+90) + "px")
+          .style("top", (d3.mouse(this)[1]+90) + "px")
+      }
+      var mouseleave = function(d) {
+        tooltip
+          .style("opacity", 0)
+      }
 
       svg.append("g")
         .selectAll("g")
@@ -92,6 +121,9 @@ d3.csv("perc_demog_20200726_clean.csv").get(function(data) {
         .enter()
         .append("g")
           .attr("transform", function(d) { return "translate(" + x(d.group) + ",0)"; })
+        .on("mouseover", mouseover)
+        .on("mousemove", mousemove)
+        .on("mouseleave", mouseleave)
         .selectAll("rect")
         .data(function(d) { return subgroups.map(function(key) { return {key: key, value: d[key]}; }); })
         .enter().append("rect")
