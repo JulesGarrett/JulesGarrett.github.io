@@ -38,7 +38,7 @@ var tooltip = d3.select("#dataviz_area")
   .append("div")
   .style("opacity", 0)
   .attr("class", "tooltip")
-  .style("background-color", "green")
+  .style("background-color", "#dedede")
   .style("border", "solid")
   .style("border-width", "1px")
   .style("border-radius", "5px")
@@ -54,7 +54,7 @@ function update(selectedVar){
     tooltip
         .html("State: "+d.full_name+"<br>"+selectedVar+": "+d[selectedVar])
         .style("opacity", 1)
-        .style("color", "red")
+        .style("color", "black")
   }
   var mousemove = function(d) {
     tooltip
@@ -106,4 +106,4 @@ function update(selectedVar){
 }
 
 // Initialize plot
-update('positive')
+update('cases')
