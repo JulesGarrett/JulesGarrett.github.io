@@ -77,9 +77,9 @@ async function graph1(){
       .text("Total Number of Covid Cases and Deaths in United States");
 
     svg.append("circle").attr("cx",width/2-30).attr("cy",10).attr("r", 6).style("fill", "blue")
-    svg.append("circle").attr("cx",width/2-80).attr("cy",10).attr("r", 6).style("fill", "red")
-    svg.append("text").attr("x", width/2-30).attr("y", 10).text("Cases").style("font-size", "15px").attr("alignment-baseline","middle")
-    svg.append("text").attr("x", width/2-80).attr("y", 10).text("Deaths").style("font-size", "15px").attr("alignment-baseline","middle")
+    svg.append("circle").attr("cx",width/2-130).attr("cy",10).attr("r", 6).style("fill", "red")
+    svg.append("text").attr("x", width/2-30).attr("y", 10).text("Cases").style("font-size", "15px").attr("alignment-baseline","bottom")
+    svg.append("text").attr("x", width/2-130).attr("y", 10).text("Deaths").style("font-size", "15px").attr("alignment-baseline","bottom")
 
   });
 }
