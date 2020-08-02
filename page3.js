@@ -16,10 +16,12 @@ var svg = d3.select("#dataviz_area").append("svg")
 
 
 function update(selectedVar){
+
   // Get the data
   d3.csv("perc_demog_20200726_clean.csv", function(error, data) {
     if (error) throw error;
-
+    data = data.filter(function(d){return d.state==selectedVar})
+    
     var all_states = d3.map(data, function(d){return(d.state)}).keys()
     var subgroups = data.columns.slice(1)
     var groups = d3.map(data, function(d){return(d.group)}).keys()
@@ -64,7 +66,7 @@ function update(selectedVar){
     xAxis.transition().duration(1000).call(d3.axisBottom(x))
 
     // Add Y axis
-    y.domain([0, d3.max(data, function(d) { return +d[selectedVar] }) ]);
+    y.domain([0, 1]);
     yAxis.transition().duration(1000).call(d3.axisLeft(y));
 
     var xSubgroup = d3.scaleBand()
@@ -93,32 +95,8 @@ function update(selectedVar){
         .attr("fill", function(d) { return color(d.key); });
 
 
-    function wrap(text, width) {
-      text.each(function() {
-        var text = d3.select(this),
-            words = text.text().split(/\s+/).reverse(),
-            word,
-            line = [],
-            lineNumber = 0,
-            lineHeight = 1.1, // ems
-            y = text.attr("y"),
-            dy = parseFloat(text.attr("dy")),
-            tspan = text.text(null).append("tspan").attr("x", 0).attr("y", y).attr("dy", dy + "em");
-        while (word = words.pop()) {
-          line.push(word);
-          tspan.text(line.join(" "));
-          if (tspan.node().getComputedTextLength() > width) {
-            line.pop();
-            tspan.text(line.join(" "));
-            line = [word];
-            tspan = text.append("tspan").attr("x", 0).attr("y", y).attr("dy", ++lineNumber * lineHeight + dy + "em").text(word);
-          }
-        }
-      });
-    }
-
 }
 )}
 
 // Initialize plot
-update('cases')
+update('United States')
