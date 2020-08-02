@@ -75,10 +75,10 @@ d3.csv("perc_demog_20200726_clean.csv").get(function(data) {
 
     svg.append("circle").attr("cx",width/3+100).attr("cy",10).attr("r", 6).style("fill", "blue")
     svg.append("circle").attr("cx",width/3).attr("cy",10).attr("r", 6).style("fill", "red")
-    svg.append("circle").attr("cx",width/3-100).attr("cy",10).attr("r", 6).style("fill", "red")
+    svg.append("circle").attr("cx",width/3-100).attr("cy",10).attr("r", 6).style("fill", "green")
     svg.append("text").attr("x", width/3+130).attr("y", 10).text("Cases").style("font-size", "15px").attr("alignment-baseline","middle")
     svg.append("text").attr("x", width/3+30).attr("y", 10).text("Deaths").style("font-size", "15px").attr("alignment-baseline","middle")
-    svg.append("text").attr("x", width/3-70).attr("y", 10).text("Deaths").style("font-size", "15px").attr("alignment-baseline","middle")
+    svg.append("text").attr("x", width/3-70).attr("y", 10).text("Population").style("font-size", "15px").attr("alignment-baseline","middle")
 
   function update(selectedVar){
       d3.selectAll(".bar").remove();
