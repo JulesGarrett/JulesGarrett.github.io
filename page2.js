@@ -93,7 +93,7 @@ function update(selectedVar){
     bars
       .enter()
       .append("rect")
-      .merge(u)
+      .merge(bars)
       .transition()
       .duration(1000)
         .attr("x", function(d) { return x(d.state); })
@@ -105,7 +105,6 @@ function update(selectedVar){
         .on('mousemove', mousemove)
         .on('mouseout', mouseout)
   })
-
 }
 
 // Initialize plot

@@ -106,6 +106,7 @@ a {
   width: 60%;
   float: center;
   align-items: center;
+  justify-content: center
 }
 .tooltip{
     position      : absolute;
