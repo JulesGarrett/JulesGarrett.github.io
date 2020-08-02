@@ -53,3 +53,11 @@ a {
   display: inline-block;
   margin-left:60px;
   }
+.filter_button{
+  width: 30%;
+  float: center;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  }
