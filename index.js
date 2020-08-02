@@ -52,6 +52,7 @@ async function graph1(){
     svg.append("path")
         .data([data])
         .attr("class", "line")
+        .style("stroke", "#40587C")
         .attr("d", valueline);
 
     svg.append("path")

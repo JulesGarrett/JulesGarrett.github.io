@@ -68,11 +68,6 @@ a {
   justify-content: center;
   margin-left:60px;
   }
-.line {
-  fill: none;
-  stroke: "blue";
-  stroke-width: 2px;
-}
 .filters{
   width: 80%;
   float: center;
