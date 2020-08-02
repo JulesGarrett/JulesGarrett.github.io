@@ -18,10 +18,12 @@ var svg = d3.select("#dataviz_area").append("svg")
 function update(selectedVar){
 
   // Get the data
-  d3.csv("perc_demog_20200726_clean.csv", function(error, data) {
+  d3.csv("./perc_demog_20200726_clean.csv", function(error, data) {
     if (error) throw error;
+    console.log(data)
     data = data.filter(function(d){return d.state==selectedVar})
-    
+    console.log(data)
+
     var all_states = d3.map(data, function(d){return(d.state)}).keys()
     var subgroups = data.columns.slice(1)
     var groups = d3.map(data, function(d){return(d.group)}).keys()
