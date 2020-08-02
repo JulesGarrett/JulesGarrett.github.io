@@ -85,7 +85,7 @@ function update(selectedVar){
         .attr("y", function(d) { return y(d.value); })
         .attr("width", xSubgroup.bandwidth())
         .attr("height", function(d) { return height - y(d.value); })
-        .attr("fill", function(d) { return color(d.key); });
+        .attr("fill", "#69b3a2");
 
 }
 )}
