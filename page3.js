@@ -23,6 +23,8 @@ function update(selectedVar){
     var all_states = d3.map(data, function(d){return(d.state)}).keys()
     var subgroups = data.columns.slice(1)
     var groups = d3.map(data, function(d){return(d.group)}).keys()
+    console.log(subgroups)
+    console.log(groups)
 
     var dropdownButton = d3.select("#selectButton")
     dropdownButton
@@ -41,7 +43,7 @@ function update(selectedVar){
 
     var x = d3.scaleBand()
         .range([0, width])
-        .padding(0.4)
+        .padding(0.8)
         .domain(groups);
 
     var xAxis = svg.append("g")
@@ -89,4 +91,4 @@ function update(selectedVar){
 )}
 
 // Initialize plot
-update('positive')
+update('cases')
