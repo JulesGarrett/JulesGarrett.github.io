@@ -69,5 +69,17 @@ async function graph1(){
     svg.append("g")
         .call(d3.axisLeft(y));
 
+    svg.append("text")
+    .attr("x", (width / 2))
+    .attr("y", 0 - (margin.top / 2))
+    .attr("text-anchor", "middle")
+    .style("font-size", "16px")
+    .text("Total Number of Covid Cases and Deaths in United States");
+
+    svg.append("circle").attr("cx",200).attr("cy",130).attr("r", 6).style("fill", "Navy Blue")
+    svg.append("circle").attr("cx",200).attr("cy",160).attr("r", 6).style("fill", "red")
+    svg.append("text").attr("x", 220).attr("y", 130).text("Cases").style("font-size", "15px").attr("alignment-baseline","middle")
+    svg.append("text").attr("x", 220).attr("y", 160).text("Deaths").style("font-size", "15px").attr("alignment-baseline","middle")
+
   });
 }
