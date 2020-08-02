@@ -151,7 +151,7 @@ d3.csv("perc_demog_20200726_clean.csv").get(function(data) {
   svg.append("text")
     .attr("x", width/5-10)
     .attr("y", 50)
-    .text("Black Americans has the largest \n   discrepancy between % population and % deaths")
+    .text("Black Americans have the largest \n   discrepancy between % population and % deaths")
     .style("font-size", "12px")
     .attr("alignment-baseline","middle")
 });
