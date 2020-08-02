@@ -67,14 +67,12 @@ d3.csv("perc_demog_20200726_clean.csv").get(function(data) {
       .range(['#e41a1c','#377eb8','#4daf4a'])
 
   function update(selectedVar){
-      console.log(data)
-      data = data.filter(function(d){return d.state==selectedVar})
-      console.log(data)
+      filtered_data = data.filter(function(d){return d.state==selectedVar})
 
       svg.append("g")
         .selectAll("g")
         // Enter in data = loop group per group
-        .data(data)
+        .data(filtered_data)
         .enter()
         .append("g")
           .attr("transform", function(d) { return "translate(" + x(d.group) + ",0)"; })
