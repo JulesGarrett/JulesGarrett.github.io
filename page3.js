@@ -31,10 +31,10 @@ var yAxis = svg.append("g")
 
 function update(selectedVar){
   // Get the data
-  d3.csv("state_data_20200726.csv", function(error, data) {
+  d3.csv("perc_demog_20200726_clean.csv", function(error, data) {
     if (error) throw error;
 
-    var all_states = d3.map(data, function(d){return(d.State)}).keys()
+    var all_states = d3.map(data, function(d){return(d.state)}).keys()
 
     d3.select("#selectButton")
       .selectAll('myOptions')
