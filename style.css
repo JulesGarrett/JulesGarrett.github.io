@@ -1,5 +1,5 @@
 body{
-  background-color: #76c1e299;
+  background-color: "white";
 }
 h1{
   height: 10%;
@@ -73,3 +73,6 @@ a {
   display: inline-block;
   margin-left:60px;
   }
+.description{
+  background-color: "d3d3d3";
+}
