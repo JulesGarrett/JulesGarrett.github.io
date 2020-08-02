@@ -110,7 +110,6 @@ async function graph1(){
       .text("Mar. 13: Trump declares national emergency")
       .style("font-size", "10px")
       .attr("alignment-baseline","middle")
-  });
 
   // Annotation: ReOpen
   svg.append("line")
