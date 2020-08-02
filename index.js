@@ -69,6 +69,7 @@ async function graph1(){
     svg.append("g")
         .call(d3.axisLeft(y));
 
+    // adding title
     svg.append("text")
       .attr("x", (width / 2))
       .attr("y", 0 - (margin.top / 2))
@@ -76,10 +77,17 @@ async function graph1(){
       .style("font-size", "16px")
       .text("Total Number of Covid Cases and Deaths in United States");
 
+    // adding legend
     svg.append("circle").attr("cx",width/2+50).attr("cy",10).attr("r", 6).style("fill", "blue")
     svg.append("circle").attr("cx",width/2-150).attr("cy",10).attr("r", 6).style("fill", "red")
     svg.append("text").attr("x", width/2+80).attr("y", 10).text("Cases").style("font-size", "15px").attr("alignment-baseline","middle")
     svg.append("text").attr("x", width/2-120).attr("y", 10).text("Deaths").style("font-size", "15px").attr("alignment-baseline","middle")
 
+    svg.append("line")
+      .attr("x1", width/2)
+      .attr("x2", width)
+      .attr("y1", height/2)
+      .attr("y2", height)
+      .style("stroke", "green")
   });
 }
