@@ -124,7 +124,6 @@ async function graph1(){
     .text("Mid-May: States start to reopen")
     .style("font-size", "10px")
     .attr("alignment-baseline","middle")
-});
 
 // Annotation: First Day of Summer
 svg.append("line")
