@@ -98,4 +98,4 @@ d3.csv("perc_demog_20200726_clean.csv", function(error, data) {
 }
 // Initialize plot
 update('United States')
-)}
+})
