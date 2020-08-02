@@ -48,9 +48,7 @@ function update(selectedVar){
 
     var xAxis = svg.append("g")
         .attr("transform", "translate(0," + height + ")")
-        .call(d3.axisBottom(x).tickSize(0))
-        .selectAll(".tick text")
-        .call(wrap, x.bandwidth());
+        .call(d3.axisBottom(x).tickSize(0));
 
 
     var y = d3.scaleLinear()
