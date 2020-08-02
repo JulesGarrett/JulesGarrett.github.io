@@ -18,8 +18,7 @@ var svg = d3.select("#dataviz_area").append("svg")
 
 
   // Get the data
-  d3.csv("perc_demog_20200726_clean.csv", function(error, data) {
-    if (error) throw error;
+const data = await d3.csv("perc_demog_20200726_clean.csv")
 
     var all_states = d3.map(data, function(d){return(d.state)}).keys()
     var subgroups = data.columns.slice(1)
@@ -97,7 +96,6 @@ function update(selectedVar){
 }
 
 update('United States')
-})
 
 d3.select("#selectButton").on("change", function(d) {
   // recover the option that has been chosen
