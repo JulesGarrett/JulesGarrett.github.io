@@ -47,6 +47,11 @@ var tooltip = d3.select("#dataviz_area")
   .style("display", "block")
 
 var VarOptions = ["cases", "death", "hospitalizedCurrently"]
+var color = d3.scaleOrdinal()
+    .domain(VarOptions)
+    .range(['#038387','#40587C','#A4262C'])
+console.log(color)
+console.log(color["cases"])
 
 function update(selectedVar){
   // Get the data
@@ -83,9 +88,6 @@ function update(selectedVar){
     y.domain([0, d3.max(data, function(d) { return +d[selectedVar] }) ]);
     yAxis.transition().duration(1000).call(d3.axisLeft(y));
 
-    var color = d3.scaleOrdinal()
-        .domain(VarOptions)
-        .range(['#038387','#40587C','#A4262C'])
 
     // variable u: map data to existing bars
     var bars = svg.selectAll("rect")
