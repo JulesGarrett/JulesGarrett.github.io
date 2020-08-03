@@ -1,5 +1,7 @@
 body{
   background-color: "white";
+   margin-left:60px;
+   margin-top: 30px;
 }
 h1{
   height: 10%;
@@ -49,12 +51,11 @@ a {
   }
 .filters{
   width: 80%;
-  float: center;
   padding: 10px 25px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  margin-left:60px;
+  margin-left:160px;
   }
 .filter_button{
   background-color: #d3d3d3;
