@@ -52,10 +52,9 @@ a {
 .filters{
   width: 80%;
   padding: 10px 25px;
-  text-align: center;
   text-decoration: none;
   display: inline-block;
-  margin-left:160px;
+  margin-left:360px;
   }
 .filter_button{
   background-color: #d3d3d3;
@@ -64,14 +63,13 @@ a {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  float: center;
   }
 .dropdown{
   width: 80%;
   align-items: left;
   text-decoration: none;
   display: inline-block;
-  margin-left:350px;
+  margin-left:360px;
   }
 .description{
   background-color: #d3d3d3;
