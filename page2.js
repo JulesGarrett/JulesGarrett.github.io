@@ -47,11 +47,9 @@ var tooltip = d3.select("#dataviz_area")
   .style("display", "block")
 
 var VarOptions = ["cases", "death", "hospitalizedCurrently"]
-var color = d3.scaleOrdinal()
+var mycolors = d3.scaleOrdinal()
     .domain(VarOptions)
     .range(['#038387','#40587C','#A4262C'])
-console.log(color)
-console.log(color["cases"])
 
 function update(selectedVar){
   // Get the data
@@ -107,7 +105,7 @@ function update(selectedVar){
         .attr("y", function(d) { return y(d[selectedVar]); })
         .attr("width", x.bandwidth())
         .attr("height", function(d) { return height - y(d[selectedVar]); })
-        .attr("fill", color[selectedVar])
+        .attr("fill", function(d){return mycolors(d) })
   })
 }
 
