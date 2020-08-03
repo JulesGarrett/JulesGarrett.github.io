@@ -118,13 +118,13 @@ async function graph1(){
 
   // Annotation: ReOpen
   svg.append("line")
-    .attr("x1", width/1.5)
-    .attr("x2", width/1.5)
+    .attr("x1", width/1.8)
+    .attr("x2", width/1.8)
     .attr("y1", height-80)
     .attr("y2", height-10)
     .style("stroke", "gray")
   svg.append("text")
-    .attr("x", width/1.5)
+    .attr("x", width/1.8)
     .attr("y", height-85)
     .text("Early-Mid May: States start to reopen")
     .style("font-size", "12px")
