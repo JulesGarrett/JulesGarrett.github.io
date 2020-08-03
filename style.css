@@ -9,12 +9,8 @@ h1{
   color:black;
   }
 h5{
-  padding-left: 10px;
-  padding-top: 10px;
   font-size:24px;
   font-weight:bold;
-  margin-left:20px;
-  margin-top:20px;
   text-align: center;
   }
 #dataviz_area{
@@ -72,11 +68,8 @@ a {
 .dropdown{
   width: 80%;
   align-items: left;
-  padding: 0px 25px;
-  text-align: center;
   text-decoration: none;
   display: inline-block;
-  margin-left:60px;
   }
 .description{
   background-color: #d3d3d3;
