@@ -70,6 +70,7 @@ a {
   align-items: left;
   text-decoration: none;
   display: inline-block;
+  margin-left:350px;
   }
 .description{
   background-color: #d3d3d3;
