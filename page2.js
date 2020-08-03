@@ -49,7 +49,7 @@ var tooltip = d3.select("#dataviz_area")
 var VarOptions = ["cases", "death", "hospitalizedCurrently"]
 var mycolors = d3.scaleOrdinal()
     .domain(VarOptions)
-    .range(['#038387','#40587C','#A4262C'])
+    .range(['#40587C','#A4262C','#CA5010'])
 
 function update(selectedVar){
   // Get the data
